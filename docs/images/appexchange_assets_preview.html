@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrossDiffAction — AppExchange Media Assets & Screenshots Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0A0F1D;
+      --bg-secondary: #0F172A;
+      --bg-card: #1E293B;
+      --border-color: #334155;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent-indigo: #4F46E5;
+      --accent-cyan: #06B6D4;
+      --accent-amber: #F59E0B;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-main);
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+    }
+    .badge-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-indigo { background: rgba(79, 70, 229, 0.2); color: #A5B4FC; border: 1px solid #4F46E5; }
+    .badge-cyan { background: rgba(6, 182, 212, 0.2); color: #67E8F9; border: 1px solid #06B6D4; }
+    .badge-amber { background: rgba(245, 158, 11, 0.2); color: #FCD34D; border: 1px solid #F59E0B; }
+    
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 36px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--accent-cyan);
+      border-radius: 2px;
+    }
+    .asset-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .asset-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .asset-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .asset-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .preview-canvas {
+      background: #020617;
+      border: 1px dashed var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: auto;
+    }
+    .preview-canvas img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+    .icon-grid {
+      display: flex;
+      gap: 40px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+    .icon-item {
+      text-align: center;
+    }
+    .icon-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .download-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .btn {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-svg {
+      background: #1E293B;
+      color: #F8FAFC;
+      border: 1px solid #475569;
+    }
+    .btn-svg:hover {
+      background: #334155;
+    }
+    .btn-png {
+      background: var(--accent-indigo);
+      color: #FFFFFF;
+    }
+    .btn-png:hover {
+      background: #4338CA;
+    }
+    .desc-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="badge-bar">
+      <span class="badge badge-indigo">Colvio Studio VI v1.1</span>
+      <span class="badge badge-cyan">AppExchange 2GP Managed</span>
+      <span class="badge badge-amber">CDA-48 Production Assets</span>
+    </div>
+    <h1>☷ CrossDiffAction — Media Assets &amp; Screenshots</h1>
+    <p class="subtitle">
+      Official App Icon, Hero Listing Banner, and 5 High-Resolution (1920x1080 16:9) UI Feature Graphics for Salesforce AppExchange Listing.
+    </p>
+  </header>
+
+  <!-- ================= SECTION 1: APP ICONS ================= -->
+  <div class="section-title">1. AppExchange App Icons</div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">App Icon (128x128px &amp; 512x512px High-Res Master)</div>
+        <div class="desc-text">
+          Features the Colvio Deep Slate Navy base with geometric transpose grid and the signature amber Diff Spotlight badge.
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="appexchange_app_icon_128.svg" class="btn btn-svg" download>SVG (128px)</a>
+        <a href="appexchange_app_icon_128.png" class="btn btn-png" download>PNG (128px)</a>
+        <a href="appexchange_app_icon_512.svg" class="btn btn-svg" download>SVG Master (512px)</a>
+        <a href="appexchange_app_icon_512.png" class="btn btn-png" download>PNG Master (512px)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <div class="icon-grid">
+        <div class="icon-item">
+          <img src="appexchange_app_icon_512.png" width="160" height="160" alt="App Icon 512px Master" />
+          <div class="icon-label">512 x 512 px (Master)</div>
+        </div>
+        <div class="icon-item">
+          <img src="appexchange_app_icon_128.png" width="128" height="128" alt="App Icon 128px" />
+          <div class="icon-label">128 x 128 px (Listing)</div>
+        </div>
+        <div class="icon-item">
+          <img src="appexchange_app_icon_128.png" width="64" height="64" alt="App Icon 64px" />
+          <div class="icon-label">64 x 64 px</div>
+        </div>
+        <div class="icon-item">
+          <img src="appexchange_app_icon_128.png" width="32" height="32" alt="App Icon 32px" />
+          <div class="icon-label">32 x 32 px (Favicon/Small)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 2: HERO BANNER ================= -->
+  <div class="section-title">2. AppExchange Hero Banner (1200 x 500 px)</div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Hero Banner: Headline &amp; Transposed Matrix UI Mockup</div>
+        <div class="desc-text">
+          Primary banner displayed atop the AppExchange product page. Highlights core value propositions and SLDS Lightning UI.
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="appexchange_hero_banner_1200x500.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="appexchange_hero_banner_1200x500.png" class="btn btn-png" download>Download PNG (1200x500)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="appexchange_hero_banner_1200x500.png" alt="AppExchange Hero Banner 1200x500" />
+    </div>
+  </div>
+
+  <!-- ================= SECTION 3: SCREENSHOTS (1920x1080) ================= -->
+  <div class="section-title">3. Official UI Feature Screenshots (1920 x 1080 px, 16:9)</div>
+
+  <!-- Screenshot 1 -->
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Screenshot 1: Transpose Matrix View (Account Comparison)</div>
+        <div class="desc-text">
+          Demonstrates vertical field inspection across 4 Accounts side-by-side with designated Baseline record and global preset.
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="screenshot_01_transpose_matrix.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="screenshot_01_transpose_matrix.png" class="btn btn-png" download>Download PNG (1080p)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="screenshot_01_transpose_matrix.png" alt="Screenshot 1: Transpose Matrix View" />
+    </div>
+  </div>
+
+  <!-- Screenshot 2 -->
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Screenshot 2: Smart Diff Finder (Discrepancy Spotlight Only)</div>
+        <div class="desc-text">
+          Shows the [Diff Only] toggle active, filtering out 23 identical matching fields to spotlight only divergent values in amber badges.
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="screenshot_02_diff_finder.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="screenshot_02_diff_finder.png" class="btn btn-png" download>Download PNG (1080p)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="screenshot_02_diff_finder.png" alt="Screenshot 2: Smart Diff Finder" />
+    </div>
+  </div>
+
+  <!-- Screenshot 3 -->
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Screenshot 3: Side-by-Side Character &amp; Word Level Diff Modal</div>
+        <div class="desc-text">
+          Deep inspection modal for rich text / long text fields with character-level inline addition (green) and deletion (red) highlights.
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="screenshot_03_character_diff_modal.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="screenshot_03_character_diff_modal.png" class="btn btn-png" download>Download PNG (1080p)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="screenshot_03_character_diff_modal.png" alt="Screenshot 3: Side-by-Side Diff Modal" />
+    </div>
+  </div>
+
+  <!-- Screenshot 4 -->
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Screenshot 4: Matrix Inline Bulk Edit &amp; Single-Click [Copy from Base]</div>
+        <div class="desc-text">
+          Interactive matrix editing with docked top save bar, instant [Copy to All] from base, and cell-level error validation retain (CDA-47).
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="screenshot_04_matrix_inline_edit.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="screenshot_04_matrix_inline_edit.png" class="btn btn-png" download>Download PNG (1080p)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="screenshot_04_matrix_inline_edit.png" alt="Screenshot 4: Matrix Inline Bulk Edit" />
+    </div>
+  </div>
+
+  <!-- Screenshot 5 -->
+  <div class="asset-card">
+    <div class="asset-header">
+      <div>
+        <div class="asset-title">Screenshot 5: Native Excel Export &amp; Enterprise Governance Presets</div>
+        <div class="desc-text">
+          Client-side in-memory SheetJS export dropdown (XLSX, XLS, CSV), organization-wide locked presets, and audit log tracking (#EXP-00142).
+        </div>
+      </div>
+      <div class="download-links">
+        <a href="screenshot_05_excel_export_and_presets.svg" class="btn btn-svg" download>Download SVG</a>
+        <a href="screenshot_05_excel_export_and_presets.png" class="btn btn-png" download>Download PNG (1080p)</a>
+      </div>
+    </div>
+    <div class="preview-canvas">
+      <img src="screenshot_05_excel_export_and_presets.png" alt="Screenshot 5: Native Excel Export & Presets" />
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Salesforce Lightning Experience Outer Shell -->
+  <rect width="1920" height="1080" fill="#F3F3F3"/>
+
+  <!-- Global Header (SLDS Header) -->
+  <rect width="1920" height="50" fill="#FFFFFF" stroke="#D8DDE6"/>
+  <!-- App Launcher 9-dot icon -->
+  <g transform="translate(18, 15)">
+    <circle cx="3" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="3" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="3" cy="17" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="17" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="17" r="2.5" fill="#706E6B"/>
+  </g>
+  <text x="56" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#0176D3">Salesforce</text>
+  
+  <!-- Global Search Bar -->
+  <rect x="520" y="9" width="480" height="32" rx="4" fill="#F3F3F3" stroke="#C9C9C9"/>
+  <text x="536" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">🔍 Search Salesforce...</text>
+
+  <!-- Global Header Right Icons (User Profile, Notifications, Help) -->
+  <g transform="translate(1820, 13)">
+    <circle cx="12" cy="12" r="12" fill="#0176D3"/>
+    <text x="8" y="16" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">IS</text>
+  </g>
+
+  <!-- Navigation Bar (Tabs) -->
+  <rect y="50" width="1920" height="44" fill="#FFFFFF" stroke="#D8DDE6"/>
+  <g transform="translate(24, 50)" font-family="-apple-system, sans-serif" font-size="13">
+    <text x="12" y="27" font-weight="600" fill="#706E6B">Home</text>
+    <text x="80" y="27" font-weight="600" fill="#706E6B">Accounts</text>
+    <text x="165" y="27" font-weight="600" fill="#706E6B">Opportunities</text>
+    
+    <!-- Active Tab: CrossDiffAction -->
+    <rect x="270" y="0" width="155" height="44" fill="#F3F3F3"/>
+    <line x1="270" y1="42" x2="425" y2="42" stroke="#0176D3" stroke-width="3"/>
+    <text x="290" y="27" font-weight="700" fill="#0176D3">☷ CrossDiffAction</text>
+
+    <text x="455" y="27" font-weight="600" fill="#706E6B">Reports</text>
+    <text x="535" y="27" font-weight="600" fill="#706E6B">Dashboards</text>
+  </g>
+
+  <!-- Breadcrumb / Record Scope Bar -->
+  <rect y="94" width="1920" height="36" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="32" y="117" font-family="-apple-system, sans-serif" font-size="12" fill="#64748B">
+    Apps &gt; Utilities &gt; <tspan font-weight="700" fill="#0F172A">CrossDiffAction Transpose Matrix</tspan>
+  </text>
+
+  <!-- Main Work Area Container (Lightning Card) -->
+  <g transform="translate(32, 142)">
+    <!-- Main Card Body -->
+    <rect width="1856" height="895" rx="8" fill="#FFFFFF" stroke="#CBD5E1" filter="url(#app_shadow)"/>
+
+    <!-- Component Header -->
+    <g transform="translate(24, 20)">
+      <!-- Custom67 Icon -->
+      <rect x="0" y="0" width="36" height="36" rx="6" fill="#0176D3"/>
+      <text x="8" y="24" font-size="18" fill="#FFFFFF">☷</text>
+      
+      <text x="48" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#0F172A">CrossDiffAction</text>
+      <rect x="235" y="6" width="90" height="24" rx="12" fill="#E0E7FF"/>
+      <text x="246" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#4338CA">ENTERPRISE</text>
+
+      <!-- Action Buttons Right -->
+      <g transform="translate(1330, 0)">
+        <rect x="0" y="2" width="110" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="14" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">⟳ Refresh (F5)</text>
+
+        <rect x="122" y="2" width="125" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="136" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">📋 Copy Summary</text>
+
+        <rect x="259" y="2" width="115" height="32" rx="4" fill="#0176D3"/>
+        <text x="273" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">📥 Export XLSX</text>
+
+        <rect x="376" y="2" width="32" height="32" rx="4" fill="#0176D3"/>
+        <text x="387" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">▾</text>
+      </g>
+    </g>
+
+    <!-- Preset Toolbar Bar -->
+    <g transform="translate(24, 76)">
+      <rect width="1808" height="38" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-dasharray="4 4"/>
+      <text x="16" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#334155">📁 Comparison Preset:</text>
+      
+      <rect x="180" y="6" width="340" height="26" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="192" y="23" font-family="-apple-system, sans-serif" font-size="12" fill="#0F172A">Enterprise Account Q3 Benchmark (Global)</text>
+      <text x="500" y="23" font-size="11" fill="#64748B">▾</text>
+
+      <rect x="532" y="8" width="92" height="22" rx="4" fill="#0F172A"/>
+      <text x="544" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#F8FAFC">🔒 GLOBAL LOCKED</text>
+
+      <rect x="636" y="7" width="90" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="648" y="23" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#0176D3">+ Save As New</text>
+    </g>
+
+    <!-- Main Controls Bar -->
+    <g transform="translate(24, 126)">
+      <rect width="1808" height="52" rx="6" fill="#FAFAFA" stroke="#E2E8F0"/>
+      
+      <!-- Object Picker -->
+      <text x="16" y="31" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#475569">OBJECT:</text>
+      <rect x="80" y="10" width="160" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="94" y="31" font-family="-apple-system, sans-serif" font-weight="600" font-size="13" fill="#0F172A">🏢 Account</text>
+      <text x="220" y="31" font-size="11" fill="#64748B">▾</text>
+
+      <!-- Record Search / Filter -->
+      <rect x="256" y="10" width="280" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="270" y="30" font-family="-apple-system, sans-serif" font-size="12" fill="#94A3B8">🔍 Search fields (e.g. Revenue, State)...</text>
+
+      <!-- Multi-Sort Selector -->
+      <rect x="550" y="10" width="200" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="562" y="30" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">↕ Sort: AnnualRevenue DESC</text>
+      <text x="730" y="30" font-size="11" fill="#64748B">▾</text>
+
+      <!-- Pinpoint Picker Button -->
+      <rect x="762" y="10" width="140" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="774" y="30" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0176D3">🎯 Select Records (4)</text>
+
+      <!-- View Mode Buttons (Transpose / Grid) -->
+      <g transform="translate(1360, 10)">
+        <rect x="0" y="0" width="110" height="32" rx="4" fill="#0176D3"/>
+        <text x="14" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">☷ Transpose</text>
+
+        <rect x="116" y="0" width="75" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="128" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">▦ Grid</text>
+
+        <rect x="198" y="0" width="105" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="210" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#D97706">⚡ Diff Only</text>
+
+        <rect x="310" y="0" width="75" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="322" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">✏️ Edit</text>
+      </g>
+    </g>
+
+    <!-- Transposed Matrix Table Container -->
+    <g transform="translate(24, 192)">
+      <rect width="1808" height="635" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+
+      <!-- Matrix Header Row (Records on X-Axis) -->
+      <rect width="1808" height="48" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="20" y="30" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#475569">FIELD LABEL (Y-AXIS)</text>
+      
+      <!-- Column 1: Base Record -->
+      <g transform="translate(380, 0)">
+        <rect x="0" y="0" width="350" height="48" fill="#EFF6FF" stroke="#BFDBFE"/>
+        <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#1D4ED8">Acme Corporation</text>
+        <rect x="230" y="12" width="105" height="24" rx="12" fill="#DBEAFE"/>
+        <text x="240" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">★ BASE RECORD</text>
+      </g>
+
+      <!-- Column 2 -->
+      <g transform="translate(735, 0)">
+        <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">Global Media Inc</text>
+        <text x="18" y="40" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">ID: 0015g00000XyZ1</text>
+      </g>
+
+      <!-- Column 3 -->
+      <g transform="translate(1090, 0)">
+        <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">Apex Logistics Ltd</text>
+        <text x="18" y="40" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">ID: 0015g00000XyZ2</text>
+      </g>
+
+      <!-- Column 4 -->
+      <g transform="translate(1445, 0)">
+        <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">CloudPeak Systems</text>
+        <text x="18" y="40" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">ID: 0015g00000XyZ3</text>
+      </g>
+
+      <!-- Data Rows (Fields on Y-Axis) -->
+      <!-- Row 1: Account Name -->
+      <g transform="translate(0, 48)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Account Name</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">Acme Corporation</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Global Media Inc</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Apex Logistics Ltd</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">CloudPeak Systems</text>
+      </g>
+
+      <!-- Row 2: Type (DIFF ROW) -->
+      <g transform="translate(0, 90)">
+        <rect width="1808" height="44" fill="#FFFDF5" stroke="#FDE68A"/>
+        <text x="20" y="27" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">Account Type ⚠️</text>
+        <text x="398" y="27" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">Customer - Direct</text>
+        
+        <rect x="745" y="7" width="170" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="755" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">Customer - Channel</text>
+
+        <rect x="1100" y="7" width="160" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="1110" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">Prospect [Diff]</text>
+
+        <rect x="1455" y="7" width="170" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="1465" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">Technology Partner</text>
+      </g>
+
+      <!-- Row 3: Annual Revenue (DIFF ROW) -->
+      <g transform="translate(0, 134)">
+        <rect width="1808" height="44" fill="#FFFDF5" stroke="#FDE68A"/>
+        <text x="20" y="27" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">Annual Revenue ⚠️</text>
+        <text x="398" y="27" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0F172A">$12,500,000</text>
+        
+        <rect x="745" y="7" width="140" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="755" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">$4,200,000 [Diff]</text>
+
+        <rect x="1100" y="7" width="140" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="1110" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">$8,900,000 [Diff]</text>
+
+        <rect x="1455" y="7" width="140" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="1465" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">$24,100,000 [Diff]</text>
+      </g>
+
+      <!-- Row 4: Rating -->
+      <g transform="translate(0, 178)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Rating</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">Hot</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Warm</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Hot</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Hot</text>
+      </g>
+
+      <!-- Row 5: Industry -->
+      <g transform="translate(0, 220)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Industry</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">Technology</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Communications</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Transportation</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Technology</text>
+      </g>
+
+      <!-- Row 6: Billing State / Province (Equal) -->
+      <g transform="translate(0, 262)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Billing State</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">California (CA)</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">California (CA)</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Illinois (IL)</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Washington (WA)</text>
+      </g>
+
+      <!-- Row 7: Ownership -->
+      <g transform="translate(0, 304)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Ownership</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">Public</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Private</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Private</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Public</text>
+      </g>
+
+      <!-- Row 8: Number of Employees -->
+      <g transform="translate(0, 346)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Employees</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">3,200</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">850</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">2,100</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">5,600</text>
+      </g>
+
+      <!-- Row 9: SLA Expiration Date -->
+      <g transform="translate(0, 388)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">SLA Expiration</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#0F172A">2027-03-31</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">2026-11-30</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">2027-01-15</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">2027-08-31</text>
+      </g>
+
+      <!-- Row 10: Active Status (Equal) -->
+      <g transform="translate(0, 430)">
+        <rect width="1808" height="42" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1E293B">Active</text>
+        <text x="398" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#166534">Yes ✓</text>
+        <text x="753" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#166534">Yes ✓</text>
+        <text x="1108" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#166534">Yes ✓</text>
+        <text x="1463" y="26" font-family="-apple-system, sans-serif" font-size="12" fill="#166534">Yes ✓</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <g transform="translate(24, 835)">
+      <rect width="1808" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="16" y="25" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#64748B">
+        Comparing 4 Account Records • 24 Fields Transposed • 2 Divergent Fields Identified
+      </text>
+      <text x="1630" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0176D3">
+        CrossDiff Core Engine v0.1.0 (SLDS Native)
+      </text>
+    </g>
+  </g>
+
+  <!-- Filter Def -->
+  <defs>
+    <filter id="app_shadow" x="20" y="135" width="1880" height="915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+</svg>

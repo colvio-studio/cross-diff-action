@@ -1,0 +1,292 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Salesforce Lightning Experience Outer Shell -->
+  <rect width="1920" height="1080" fill="#F3F3F3"/>
+
+  <!-- Global Header (SLDS Header) -->
+  <rect width="1920" height="50" fill="#FFFFFF" stroke="#D8DDE6"/>
+  <g transform="translate(18, 15)">
+    <circle cx="3" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="3" r="2.5" fill="#706E6B"/>
+    <circle cx="3" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="10" r="2.5" fill="#706E6B"/>
+    <circle cx="3" cy="17" r="2.5" fill="#706E6B"/>
+    <circle cx="10" cy="17" r="2.5" fill="#706E6B"/>
+    <circle cx="17" cy="17" r="2.5" fill="#706E6B"/>
+  </g>
+  <text x="56" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#0176D3">Salesforce</text>
+  
+  <rect x="520" y="9" width="480" height="32" rx="4" fill="#F3F3F3" stroke="#C9C9C9"/>
+  <text x="536" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">🔍 Search Salesforce...</text>
+
+  <g transform="translate(1820, 13)">
+    <circle cx="12" cy="12" r="12" fill="#0176D3"/>
+    <text x="8" y="16" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">IS</text>
+  </g>
+
+  <!-- Navigation Bar (Tabs) -->
+  <rect y="50" width="1920" height="44" fill="#FFFFFF" stroke="#D8DDE6"/>
+  <g transform="translate(24, 50)" font-family="-apple-system, sans-serif" font-size="13">
+    <text x="12" y="27" font-weight="600" fill="#706E6B">Home</text>
+    <text x="80" y="27" font-weight="600" fill="#706E6B">Accounts</text>
+    <text x="165" y="27" font-weight="600" fill="#706E6B">Opportunities</text>
+    
+    <rect x="270" y="0" width="155" height="44" fill="#F3F3F3"/>
+    <line x1="270" y1="42" x2="425" y2="42" stroke="#0176D3" stroke-width="3"/>
+    <text x="290" y="27" font-weight="700" fill="#0176D3">☷ CrossDiffAction</text>
+
+    <text x="455" y="27" font-weight="600" fill="#706E6B">Reports</text>
+    <text x="535" y="27" font-weight="600" fill="#706E6B">Dashboards</text>
+  </g>
+
+  <!-- Breadcrumb Bar -->
+  <rect y="94" width="1920" height="36" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="32" y="117" font-family="-apple-system, sans-serif" font-size="12" fill="#64748B">
+    Apps &gt; Utilities &gt; CrossDiffAction &gt; <tspan font-weight="700" fill="#0176D3">Matrix Inline Bulk Editing Mode</tspan>
+  </text>
+
+  <!-- Main Work Area Container (Lightning Card) -->
+  <g transform="translate(32, 142)">
+    <rect width="1856" height="895" rx="8" fill="#FFFFFF" stroke="#CBD5E1" filter="url(#app_shadow4)"/>
+
+    <!-- Component Header -->
+    <g transform="translate(24, 20)">
+      <rect x="0" y="0" width="36" height="36" rx="6" fill="#0176D3"/>
+      <text x="8" y="24" font-size="18" fill="#FFFFFF">☷</text>
+      
+      <text x="48" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#0F172A">CrossDiffAction</text>
+      <rect x="235" y="6" width="90" height="24" rx="12" fill="#E0E7FF"/>
+      <text x="246" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#4338CA">ENTERPRISE</text>
+
+      <!-- Edit Mode Active Badge -->
+      <rect x="338" y="6" width="170" height="24" rx="12" fill="#DBEAFE"/>
+      <text x="350" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#1D4ED8">✏️ BULK EDIT ACTIVE</text>
+    </g>
+
+    <!-- TOP DOCKED SAVE BAR (CDA-25 / CDA-47 Implementation) -->
+    <g transform="translate(24, 66)">
+      <rect width="1808" height="46" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+      
+      <g transform="translate(18, 12)">
+        <text x="0" y="18" font-size="16">⚠️</text>
+        <text x="26" y="18" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">
+          Unsaved Changes in Matrix
+        </text>
+        <rect x="210" y="2" width="165" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A"/>
+        <text x="220" y="17" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#92400E">
+          4 draft edits across 3 records
+        </text>
+      </g>
+
+      <!-- Save Bar Action Buttons -->
+      <g transform="translate(1530, 7)">
+        <rect x="0" y="0" width="90" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="18" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">Cancel</text>
+
+        <rect x="102" y="0" width="160" height="32" rx="4" fill="#0176D3"/>
+        <text x="118" y="21" font-family="-apple-system, sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">💾 Save All Changes</text>
+      </g>
+    </g>
+
+    <!-- Transposed Matrix Table Container (Editable Cells) -->
+    <g transform="translate(24, 126)">
+      <rect width="1808" height="700" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+
+      <!-- Matrix Header Row -->
+      <rect width="1808" height="52" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="20" y="32" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#475569">FIELD LABEL (Y-AXIS)</text>
+      
+      <!-- Base Record Header -->
+      <g transform="translate(380, 0)">
+        <rect x="0" y="0" width="350" height="52" fill="#EFF6FF" stroke="#BFDBFE"/>
+        <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#1D4ED8">Acme Corporation</text>
+        <rect x="230" y="8" width="105" height="22" rx="11" fill="#DBEAFE"/>
+        <text x="240" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">★ BASE RECORD</text>
+        <text x="18" y="44" font-family="-apple-system, sans-serif" font-size="10" fill="#3B82F6">Standard Template Source</text>
+      </g>
+
+      <!-- Target Columns Header -->
+      <g transform="translate(735, 0)">
+        <text x="18" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">Global Media Inc</text>
+        <rect x="18" y="32" width="115" height="16" rx="3" fill="#E0F2FE"/>
+        <text x="24" y="44" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#0369A1">2 DRAFT CHANGES</text>
+      </g>
+
+      <g transform="translate(1090, 0)">
+        <text x="18" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">Apex Logistics Ltd</text>
+        <rect x="18" y="32" width="115" height="16" rx="3" fill="#E0F2FE"/>
+        <text x="24" y="44" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#0369A1">1 DRAFT CHANGE</text>
+      </g>
+
+      <g transform="translate(1445, 0)">
+        <text x="18" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">CloudPeak Systems</text>
+        <rect x="18" y="32" width="125" height="16" rx="3" fill="#FEE2E2"/>
+        <text x="24" y="44" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#991B1B">⚠️ 1 VALIDATION ERR</text>
+      </g>
+
+      <!-- Row 1: Account Type (With Copy From Base Button) -->
+      <g transform="translate(0, 52)">
+        <rect width="1808" height="60" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="35" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1E293B">Account Type</text>
+        
+        <!-- Base Cell with [Copy to All] Action Button -->
+        <g transform="translate(390, 12)">
+          <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#3B82F6"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1D4ED8">Customer - Direct</text>
+          
+          <!-- Copy from Base Button -->
+          <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
+          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+        </g>
+
+        <!-- Col 2: Editable Cell (Selected/Dropdown) -->
+        <g transform="translate(745, 12)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#0176D3" stroke-width="2"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#0F172A">Customer - Direct</text>
+          <!-- Draft Indicator -->
+          <circle cx="280" cy="18" r="4" fill="#0176D3"/>
+          <text x="290" y="22" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#0176D3">DRAFT</text>
+        </g>
+
+        <!-- Col 3: Editable Cell -->
+        <g transform="translate(1100, 12)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Prospect</text>
+          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+        </g>
+
+        <!-- Col 4: Editable Cell -->
+        <g transform="translate(1455, 12)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Technology Partner</text>
+          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+        </g>
+      </g>
+
+      <!-- Row 2: Annual Revenue (With Error Highlight Cell - CDA-47 Feature) -->
+      <g transform="translate(0, 112)">
+        <rect width="1808" height="64" fill="#FFFDF5" stroke="#FDE68A"/>
+        <text x="20" y="37" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#92400E">Annual Revenue</text>
+        
+        <!-- Base Cell -->
+        <g transform="translate(390, 14)">
+          <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#3B82F6"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">$12,500,000</text>
+          
+          <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
+          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+        </g>
+
+        <!-- Col 2: Edited Cell (Valid Draft) -->
+        <g transform="translate(745, 14)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#0176D3" stroke-width="2"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">$5,500,000</text>
+          <circle cx="280" cy="18" r="4" fill="#0176D3"/>
+          <text x="290" y="22" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#0176D3">DRAFT</text>
+        </g>
+
+        <!-- Col 3: Cell (Unedited) -->
+        <g transform="translate(1100, 14)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">$8,900,000</text>
+        </g>
+
+        <!-- Col 4: Cell WITH VALIDATION ERROR HIGHLIGHT (CDA-47 RED BORDER + POPOVER) -->
+        <g transform="translate(1455, 14)">
+          <!-- Red Error Input Box -->
+          <rect width="320" height="36" rx="4" fill="#FEF2F2" stroke="#EA001E" stroke-width="2.5"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#991B1B">-$500,000</text>
+          <text x="292" y="24" font-size="14" fill="#EA001E">⚠️</text>
+
+          <!-- Error Tooltip / Help Text Bubble -->
+          <g transform="translate(0, 42)">
+            <rect width="320" height="26" rx="4" fill="#EA001E"/>
+            <text x="12" y="17" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">
+              FIELD_CUSTOM_VALIDATION_EXCEPTION: Revenue cannot be negative
+            </text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Row 3: Rating -->
+      <g transform="translate(0, 202)">
+        <rect width="1808" height="56" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="33" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1E293B">Rating</text>
+
+        <g transform="translate(390, 10)">
+          <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#3B82F6"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">Hot</text>
+          <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
+          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+        </g>
+
+        <!-- Col 2: Warm -->
+        <g transform="translate(745, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Warm</text>
+          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+        </g>
+
+        <!-- Col 3: Draft Changed to Hot -->
+        <g transform="translate(1100, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#0176D3" stroke-width="2"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">Hot (Copied)</text>
+          <circle cx="280" cy="18" r="4" fill="#0176D3"/>
+          <text x="290" y="22" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#0176D3">DRAFT</text>
+        </g>
+
+        <!-- Col 4: Hot -->
+        <g transform="translate(1455, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Hot</text>
+          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+        </g>
+      </g>
+
+      <!-- Row 4: Billing City -->
+      <g transform="translate(0, 258)">
+        <rect width="1808" height="56" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="20" y="33" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1E293B">Billing City</text>
+
+        <g transform="translate(390, 10)">
+          <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#BFDBFE"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#1D4ED8">San Francisco</text>
+          <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
+          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+        </g>
+
+        <g transform="translate(745, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">New York</text>
+        </g>
+        <g transform="translate(1100, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Chicago</text>
+        </g>
+        <g transform="translate(1455, 10)">
+          <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Seattle</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <g transform="translate(24, 835)">
+      <rect width="1808" height="40" rx="4" fill="#FFFBEB" stroke="#FDE68A"/>
+      <text x="16" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#92400E">
+        Enterprise Bulk DML Engine • Partial-Success Isolation with Cell-Level Error Retain (CDA-47 Ready)
+      </text>
+      <text x="1560" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0176D3">
+        Atomic Transaction Protection
+      </text>
+    </g>
+  </g>
+
+  <!-- Filter Def -->
+  <defs>
+    <filter id="app_shadow4" x="20" y="135" width="1880" height="915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,211 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0A0F1D"/>
+  
+  <!-- Subtle Ambient Glows -->
+  <circle cx="220" cy="160" r="320" fill="#4F46E5" fill-opacity="0.14"/>
+  <circle cx="1020" cy="360" r="360" fill="#06B6D4" fill-opacity="0.10"/>
+  <circle cx="700" cy="100" r="240" fill="#F59E0B" fill-opacity="0.05"/>
+  
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="498" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- ================= LEFT COLUMN: Typography & Value Props ================= -->
+  <g transform="translate(75, 65)">
+    <!-- Colvio Studio Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="140" height="32" rx="16" fill="#1E293B" stroke="#334155"/>
+      <!-- Small Colvio Symbol -->
+      <g transform="translate(10, 6) scale(0.6)">
+        <path d="M 24 6 C 14 6 7 13 7 16 C 7 19 14 26 24 26" stroke="#818CF8" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 16 11 L 22 16 L 16 21" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="36" y="21" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="12" fill="#F8FAFC">A Colvio Utility</text>
+    </g>
+
+    <!-- Main App Title -->
+    <text x="0" y="82" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="800" font-size="44" fill="#FFFFFF" letter-spacing="-0.03em">CrossDiffAction</text>
+    
+    <!-- Headline / Tagline -->
+    <text x="0" y="124" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="20" fill="#38BDF8" letter-spacing="-0.01em">Smart Matrix &amp; Diff Comparator for Salesforce</text>
+    
+    <!-- Subtitle description -->
+    <text x="0" y="152" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="14" fill="#94A3B8">
+      Eliminate horizontal scrolling. Transpose records &amp; spotlight differences instantly.
+    </text>
+
+    <!-- Bullet Points with Icons -->
+    <g transform="translate(0, 182)" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="14" fill="#CBD5E1">
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="4" fill="#4F46E5"/>
+        <text x="24" y="13" font-weight="600">1-Click Transpose Matrix View (Vertical Field Inspection)</text>
+      </g>
+      <g transform="translate(0, 30)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="24" y="13" font-weight="600">Smart Diff Finder &amp; Base Record Discrepancy Spotlight</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <circle cx="8" cy="8" r="4" fill="#06B6D4"/>
+        <text x="24" y="13" font-weight="600">Matrix Inline Bulk Edit &amp; Single-Click [Copy from Base]</text>
+      </g>
+      <g transform="translate(0, 90)">
+        <circle cx="8" cy="8" r="4" fill="#10B981"/>
+        <text x="24" y="13" font-weight="600">100% Org-Native Security &amp; Browser-Generated Excel Export</text>
+      </g>
+    </g>
+
+    <!-- Trust & Technical Badges -->
+    <g transform="translate(0, 325)">
+      <!-- Badge: 100% Native -->
+      <rect x="0" y="0" width="105" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+      <text x="12" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#34D399">✓ 100% Native</text>
+
+      <!-- Badge: AppExchange 2GP -->
+      <rect x="115" y="0" width="130" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+      <text x="127" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#E2E8F0">⚡ 2GP Managed</text>
+
+      <!-- Badge: Enterprise Ready -->
+      <rect x="255" y="0" width="135" height="28" rx="6" fill="#1E1B4B" stroke="#4F46E5"/>
+      <text x="267" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#A5B4FC">🛡️ Enterprise Ready</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: High-Fidelity SLDS UI Mockup ================= -->
+  <g transform="translate(635, 55)">
+    <!-- Card Container with Drop Shadow -->
+    <rect width="500" height="395" rx="10" fill="#FFFFFF" filter="url(#shadow_card)"/>
+    <rect x="0.5" y="0.5" width="499" height="394" rx="9.5" stroke="#CBD5E1"/>
+
+    <!-- Lightning Card Header -->
+    <path d="M 0 10 C 0 4.5 4.5 0 10 0 L 490 0 C 495.5 0 500 4.5 500 10 L 500 46 L 0 46 Z" fill="#F8FAFC"/>
+    <line x1="0" y1="46" x2="500" y2="46" stroke="#E2E8F0"/>
+
+    <!-- Header Content -->
+    <!-- Custom67 Icon Box (Teal/Orange) -->
+    <rect x="14" y="11" width="24" height="24" rx="4" fill="#0176D3"/>
+    <text x="19" y="27" font-size="12" fill="#FFFFFF">☷</text>
+    <text x="46" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" fill="#0F172A">CrossDiffAction</text>
+    <rect x="156" y="13" width="72" height="20" rx="10" fill="#E0E7FF"/>
+    <text x="165" y="27" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#4338CA">ENTERPRISE</text>
+
+    <!-- Top Action Buttons -->
+    <rect x="310" y="11" width="85" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="318" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569">📋 Copy Diff</text>
+
+    <rect x="403" y="11" width="83" height="24" rx="4" fill="#0176D3"/>
+    <text x="412" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">📥 Export ▾</text>
+
+    <!-- Preset Bar -->
+    <g transform="translate(14, 56)">
+      <rect width="472" height="26" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-dasharray="3 3"/>
+      <text x="10" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#475569">📁 Preset: Account Q3 Executive Audit</text>
+      <rect x="390" y="4" width="72" height="18" rx="4" fill="#0F172A"/>
+      <text x="398" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#F8FAFC">🔒 GLOBAL</text>
+    </g>
+
+    <!-- Toolbar: Controls & Filters -->
+    <g transform="translate(14, 90)">
+      <rect width="472" height="34" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <!-- Object Picker Mock -->
+      <rect x="8" y="5" width="110" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="16" y="21" font-family="-apple-system, sans-serif" font-size="11" fill="#1E293B">🏢 Account ▾</text>
+
+      <!-- Search Box Mock -->
+      <rect x="126" y="5" width="120" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="134" y="21" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">🔍 Search fields...</text>
+
+      <!-- Transpose Button Group -->
+      <rect x="254" y="5" width="70" height="24" rx="3" fill="#0176D3"/>
+      <text x="264" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">☷ Transpose</text>
+
+      <!-- Diff Only Active Button -->
+      <rect x="330" y="5" width="72" height="24" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
+      <text x="338" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#92400E">⚡ Diff Only</text>
+
+      <!-- Edit Button -->
+      <rect x="408" y="5" width="56" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="418" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#475569">✏️ Edit</text>
+    </g>
+
+    <!-- Transposed Matrix Table Mock -->
+    <g transform="translate(14, 134)">
+      <!-- Table Header -->
+      <rect width="472" height="28" fill="#F1F5F9" stroke="#E2E8F0"/>
+      <text x="12" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#475569">FIELD (Y-AXIS)</text>
+      <text x="140" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0176D3">Acme Corp ★ Base</text>
+      <text x="255" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E293B">Global Media Inc</text>
+      <text x="370" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E293B">Apex Logistics</text>
+
+      <!-- Row 1: Account Name (Equal) -->
+      <g transform="translate(0, 28)">
+        <rect width="472" height="32" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="12" y="20" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#0F172A">Account Name</text>
+        <text x="140" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">Acme Corp</text>
+        <text x="255" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">Global Media Inc</text>
+        <text x="370" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">Apex Logistics</text>
+      </g>
+
+      <!-- Row 2: Annual Revenue (DIFF ROW - Amber Highlight) -->
+      <g transform="translate(0, 60)">
+        <rect width="472" height="34" fill="#FFFDF5" stroke="#FDE68A"/>
+        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Annual Revenue ⚠️</text>
+        <rect x="135" y="4" width="105" height="26" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="142" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0F172A">$5,200,000</text>
+        
+        <!-- Cell 2: Highlighted Diff -->
+        <rect x="250" y="4" width="105" height="26" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="256" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">$3,800,000 [Diff]</text>
+
+        <!-- Cell 3: Highlighted Diff -->
+        <rect x="365" y="4" width="100" height="26" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="371" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">$8,450,000 [Diff]</text>
+      </g>
+
+      <!-- Row 3: Rating (DIFF ROW - Amber Highlight) -->
+      <g transform="translate(0, 94)">
+        <rect width="472" height="34" fill="#FFFDF5" stroke="#FDE68A"/>
+        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Rating ⚠️</text>
+        <text x="140" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#0F172A">Hot</text>
+        
+        <rect x="250" y="4" width="70" height="24" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="258" y="20" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Warm [Diff]</text>
+
+        <rect x="365" y="4" width="70" height="24" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
+        <text x="373" y="20" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Hot</text>
+      </g>
+
+      <!-- Row 4: Billing City (Equal) -->
+      <g transform="translate(0, 128)">
+        <rect width="472" height="32" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="12" y="20" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#0F172A">Billing City</text>
+        <text x="140" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">San Francisco</text>
+        <text x="255" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">New York</text>
+        <text x="370" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">Chicago</text>
+      </g>
+
+      <!-- Row 5: SLA Expiration Date -->
+      <g transform="translate(0, 160)">
+        <rect width="472" height="32" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="12" y="20" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#0F172A">SLA Expiration</text>
+        <text x="140" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">2026-12-31</text>
+        <text x="255" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">2027-03-31</text>
+        <text x="370" y="20" font-family="-apple-system, sans-serif" font-size="10" fill="#334155">2026-09-30</text>
+      </g>
+
+      <!-- Bottom Status Bar -->
+      <g transform="translate(0, 192)">
+        <rect width="472" height="30" fill="#F8FAFC" stroke="#E2E8F0"/>
+        <text x="12" y="20" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748B">3 Records Loaded • 2 Divergent Fields Identified</text>
+        <rect x="365" y="5" width="98" height="20" rx="3" fill="#E2E8F0"/>
+        <text x="374" y="19" font-family="-apple-system, sans-serif" font-weight="600" font-size="9" fill="#334155">Auto-Saved ✓</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Shadow Filter Def -->
+  <defs>
+    <filter id="shadow_card" x="615" y="40" width="540" height="435" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+</svg>

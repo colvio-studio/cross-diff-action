@@ -1,0 +1,23 @@
+<svg width="240" height="50" viewBox="0 0 240 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Symbol: The Frictionless Way -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Flow C-Arc (Col-) -->
+    <path d="M 30 8 C 16 8 8 16 8 19 C 8 22 16 30 30 30" stroke="url(#paint_indigo_dark)" stroke-width="4.5" stroke-linecap="round"/>
+    <!-- Inner Dynamic Via Path (-vio) -->
+    <path d="M 20 13 L 28 19 L 20 25" stroke="url(#paint_cyan_dark)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Dot -->
+    <circle cx="33" cy="19" r="2.5" fill="#06B6D4"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="56" y="32" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="26" fill="#F8FAFC" letter-spacing="-0.03em">Colvio</text>
+  <defs>
+    <linearGradient id="paint_indigo_dark" x1="8" y1="8" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="paint_cyan_dark" x1="20" y1="13" x2="33" y2="25" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Premium Dark Slate Navy Background -->
+  <rect width="128" height="128" rx="28" fill="url(#bg_grad)"/>
+  
+  <!-- Subtle inner border for premium enterprise depth -->
+  <rect x="1" y="1" width="126" height="126" rx="27" stroke="white" stroke-opacity="0.15" stroke-width="1.5"/>
+
+  <!-- Ambient Glow Behind Central Emblem -->
+  <circle cx="64" cy="64" r="42" fill="url(#glow_grad)" opacity="0.6"/>
+
+  <!-- CrossDiff Symbolic Matrix & Transpose Comparator -->
+  <g transform="translate(20, 20)">
+    <!-- Matrix Grid Base Card -->
+    <rect x="4" y="8" width="80" height="72" rx="10" fill="#0F172A" fill-opacity="0.85" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Left Header Column (Field Labels) -->
+    <rect x="8" y="13" width="22" height="16" rx="4" fill="#1E293B"/>
+    <rect x="8" y="34" width="22" height="16" rx="4" fill="#1E293B"/>
+    <rect x="8" y="55" width="22" height="16" rx="4" fill="#1E293B"/>
+
+    <!-- Column 1: Record A (Base Record) -->
+    <rect x="34" y="13" width="23" height="16" rx="4" fill="#1E1B4B" stroke="#4F46E5" stroke-width="1"/>
+    <rect x="34" y="34" width="23" height="16" rx="4" fill="#1E1B4B" stroke="#4F46E5" stroke-width="1"/>
+    <rect x="34" y="55" width="23" height="16" rx="4" fill="#1E1B4B" stroke="#4F46E5" stroke-width="1"/>
+    <line x1="39" y1="21" x2="52" y2="21" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="39" y1="42" x2="52" y2="42" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="39" y1="63" x2="52" y2="63" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Column 2: Record B (Target Record with Diff) -->
+    <!-- Row 1: Equal (Blue) -->
+    <rect x="61" y="13" width="23" height="16" rx="4" fill="#1E1B4B" stroke="#4338CA" stroke-width="1"/>
+    <line x1="66" y1="21" x2="79" y2="21" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Row 2: DIFF SPOTLIGHT (Amber Highlight - The Signature CrossDiff Badge) -->
+    <rect x="61" y="34" width="23" height="16" rx="4" fill="#78350F" stroke="#F59E0B" stroke-width="1.8"/>
+    <circle cx="68" cy="42" r="2.5" fill="#FBBF24"/>
+    <line x1="73" y1="42" x2="80" y2="42" stroke="#FDE68A" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Row 3: Equal (Blue) -->
+    <rect x="61" y="55" width="23" height="16" rx="4" fill="#1E1B4B" stroke="#4338CA" stroke-width="1"/>
+    <line x1="66" y1="63" x2="79" y2="63" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Dynamic Transpose Arc (Vivid Cyan Vector) -->
+    <path d="M 12 6 C 12 1 76 1 76 6" stroke="url(#cyan_grad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 72 3 L 77 6 L 72 9" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Diff Pulse Dot -->
+    <circle cx="72.5" cy="42" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg_grad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0F1D"/>
+      <stop offset="0.5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+
+    <!-- Glow Gradient -->
+    <radialGradient id="glow_grad" cx="64" cy="64" r="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5" stop-opacity="0.4"/>
+      <stop offset="0.7" stop-color="#06B6D4" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#0A0F1D" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyan Arc Gradient -->
+    <linearGradient id="cyan_grad" x1="12" y1="6" x2="76" y2="6" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+</svg>
