@@ -8,9 +8,9 @@
 
 [![Salesforce 2GP](https://img.shields.io/badge/Salesforce-2GP%20Managed%20Package-0176D3?style=flat-square&logo=salesforce)](https://appexchange.salesforce.com)
 [![Zero External Business Data Callout](https://img.shields.io/badge/Security-100%25%20Native%20Zero%20Callout-10B981?style=flat-square)](https://colvio.io#security)
-[![Enterprise Ready](https://img.shields.io/badge/Enterprise-Audit%20Logs%20%26%20Presets-818CF8?style=flat-square)](docs/customer/ENTERPRISE_CUSTOMIZATION_GUIDE.md)
+[![Enterprise Ready](https://img.shields.io/badge/Enterprise-Audit%20Logs%20%26%20Presets-818CF8?style=flat-square)](docs/ENTERPRISE_CUSTOMIZATION_GUIDE.md)
 [![Publisher](https://img.shields.io/badge/Engineered%20by-Colvio%20Studio-4F46E5?style=flat-square)](https://colvio.io)
-[![AppExchange Security](https://img.shields.io/badge/AppExchange-Security%20Review%20Ready-06B6D4?style=flat-square)](docs/marketplaces/appexchange/security-review/SECURITY_REVIEW_TESTING_INSTRUCTIONS.md)
+[![AppExchange Security](https://img.shields.io/badge/AppExchange-Security%20Review%20Ready-06B6D4?style=flat-square)](SECURITY.md)
 
 <br/>
 
@@ -21,7 +21,7 @@
 **Tired of endless horizontal scrolling in Salesforce standard list views?**<br/>
 **Rotate records into a clean vertical matrix, pinpoint discrepancies in seconds, and bulk-edit with zero friction.**
 
-[**Explore on Colvio.io**](https://colvio.io) • [**AppExchange Listing**](https://appexchange.salesforce.com) • [**Admin Setup Guide**](docs/customer/ADMIN_SETUP_GUIDE.md) • [**User Guide**](docs/customer/USER_GUIDE.md) • [**Report an Issue**](https://github.com/colvio-studio/cross-diff-action/issues)
+[**Explore on Colvio.io**](https://colvio.io) • [**AppExchange Listing**](https://appexchange.salesforce.com) • [**Admin Setup Guide**](docs/ADMIN_SETUP_GUIDE.md) • [**User Guide**](docs/USER_GUIDE.md) • [**Report an Issue**](https://github.com/colvio-studio/cross-diff-action/issues)
 
 </div>
 
@@ -163,25 +163,24 @@ CrossDiffAction comes pre-configured with native translation support across **8 
 ## 📚 Complete Documentation Sitemap
 
 - **Admin & Setup**:
-  - 📋 [**Admin Setup Guide (English)**](docs/customer/ADMIN_SETUP_GUIDE.md)
-  - 🇯🇵 [**管理者セットアップガイド（日本語）**](docs/customer/ADMIN_SETUP_GUIDE_JA.md)
+  - 📋 [**Admin Setup Guide (English)**](docs/ADMIN_SETUP_GUIDE.md)
+  - 🇯🇵 [**管理者セットアップガイド（日本語）**](docs/ADMIN_SETUP_GUIDE_JA.md)
 - **User Guides**:
-  - 👤 [**End User Guide (English)**](docs/customer/USER_GUIDE.md)
-  - 🇯🇵 [**エンドユーザー操作マニュアル（日本語）**](docs/customer/USER_GUIDE_JA.md)
+  - 👤 [**End User Guide (English)**](docs/USER_GUIDE.md)
+  - 🇯🇵 [**エンドユーザー操作マニュアル（日本語）**](docs/USER_GUIDE_JA.md)
 - **Enterprise & Governance**:
-  - 🛡️ [**Enterprise Customization & Governance Guide (English)**](docs/customer/ENTERPRISE_CUSTOMIZATION_GUIDE.md)
-  - 🇯🇵 [**エンタープライズカスタマイズガイド（日本語）**](docs/customer/ENTERPRISE_CUSTOMIZATION_GUIDE_JA.md)
-- **Security & Quality**:
-  - 🔒 [**AppExchange Security Review Testing Instructions**](docs/marketplaces/appexchange/security-review/SECURITY_REVIEW_TESTING_INSTRUCTIONS.md)
-  - 📊 [**Data Flow & Security Architecture**](docs/marketplaces/appexchange/security-review/DATA_FLOW_AND_SECURITY.md)
-  - 🛡️ [**Security Policy & Responsible Disclosure (SECURITY.md)**](SECURITY.md)
-  - 📄 [**Internal Developer Overview (日本語)**](docs/architecture/INTERNAL_DEVELOPMENT_OVERVIEW_JA.md)
+  - 🛡️ [**Enterprise Customization & Governance Guide (English)**](docs/ENTERPRISE_CUSTOMIZATION_GUIDE.md)
+  - 🇯🇵 [**エンタープライズカスタマイズガイド（日本語）**](docs/ENTERPRISE_CUSTOMIZATION_GUIDE_JA.md)
+- **Security & Releases**:
+  - 🔒 [**Security Policy & Zero-Callout Guarantee (SECURITY.md)**](SECURITY.md)
+  - 📦 [**Release Notes v0.1.0**](docs/RELEASE_NOTES_v0.1.0.md)
 
 ---
 
 ## 💬 Support & Inquiries
 
 - **Email Support**: [support@colvio.io](mailto:support@colvio.io) (Guaranteed 24-hour asynchronous SLA)
+- **Repository**: [colvio-studio/cross-diff-action](https://github.com/colvio-studio/cross-diff-action)
 - **Issue Tracker**: [GitHub Issues](https://github.com/colvio-studio/cross-diff-action/issues)
 - **Studio Portal**: [https://colvio.io](https://colvio.io)
 - **Privacy Policy**: [https://colvio.io/privacy](https://colvio.io/privacy)
