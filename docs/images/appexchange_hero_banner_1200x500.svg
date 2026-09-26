@@ -57,16 +57,25 @@
     <!-- Trust & Technical Badges -->
     <g transform="translate(0, 325)">
       <!-- Badge: 100% Native -->
-      <rect x="0" y="0" width="105" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
-      <text x="12" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#34D399">✓ 100% Native</text>
+      <rect x="0" y="0" width="115" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+      <g transform="translate(10, 8)">
+        <polyline points="1,5 4,8 10,2" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="26" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#34D399">100% Native</text>
 
       <!-- Badge: AppExchange 2GP -->
-      <rect x="115" y="0" width="130" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
-      <text x="127" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#E2E8F0">⚡ 2GP Managed</text>
+      <rect x="125" y="0" width="135" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+      <g transform="translate(135, 7)">
+        <path d="M6 1L1 7H5L4 12L9 5H5L6 1Z" fill="#F59E0B"/>
+      </g>
+      <text x="150" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#E2E8F0">2GP Managed</text>
 
       <!-- Badge: Enterprise Ready -->
-      <rect x="255" y="0" width="135" height="28" rx="6" fill="#1E1B4B" stroke="#4F46E5"/>
-      <text x="267" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#A5B4FC">🛡️ Enterprise Ready</text>
+      <rect x="270" y="0" width="145" height="28" rx="6" fill="#1E1B4B" stroke="#4F46E5"/>
+      <g transform="translate(280, 7)">
+        <path d="M6 1L1 3V7C1 10 6 12 6 12C6 12 11 10 11 7V3L6 1Z" fill="none" stroke="#818CF8" stroke-width="1.3"/>
+      </g>
+      <text x="297" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#A5B4FC">Enterprise Ready</text>
     </g>
   </g>
 
@@ -81,26 +90,55 @@
     <line x1="0" y1="46" x2="500" y2="46" stroke="#E2E8F0"/>
 
     <!-- Header Content -->
-    <!-- Custom67 Icon Box (Teal/Orange) -->
+    <!-- Custom67 Icon Box (Teal/Orange) with Vector Grid -->
     <rect x="14" y="11" width="24" height="24" rx="4" fill="#0176D3"/>
-    <text x="19" y="27" font-size="12" fill="#FFFFFF">☷</text>
+    <g transform="translate(19, 16)" fill="#FFFFFF">
+      <rect x="0" y="0" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="5.5" y="0" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="11" y="0" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="0" y="5.5" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="5.5" y="5.5" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="11" y="5.5" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="0" y="11" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="5.5" y="11" width="3.5" height="3.5" rx="0.5"/>
+      <rect x="11" y="11" width="3.5" height="3.5" rx="0.5"/>
+    </g>
     <text x="46" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" fill="#0F172A">CrossDiffAction</text>
     <rect x="156" y="13" width="72" height="20" rx="10" fill="#E0E7FF"/>
     <text x="165" y="27" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#4338CA">ENTERPRISE</text>
 
     <!-- Top Action Buttons -->
     <rect x="310" y="11" width="85" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
-    <text x="318" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569">📋 Copy Diff</text>
+    <!-- Copy Icon -->
+    <g transform="translate(318, 17)">
+      <rect x="2" y="2" width="6" height="8" rx="1" fill="none" stroke="#475569" stroke-width="1"/>
+      <path d="M4 2V1H7V2" fill="none" stroke="#475569" stroke-width="1"/>
+    </g>
+    <text x="330" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569">Copy Diff</text>
 
     <rect x="403" y="11" width="83" height="24" rx="4" fill="#0176D3"/>
-    <text x="412" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">📥 Export ▾</text>
+    <!-- Export Tray Icon -->
+    <g transform="translate(412, 17)">
+      <path d="M1 6V8C1 8.5 1.5 9 2 9H8C8.5 9 9 8.5 9 8V6M5 1V6M3 4L5 6L7 4" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="426" y="27" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Export</text>
+    <polygon points="468,22 474,22 471,26" fill="#FFFFFF"/>
 
     <!-- Preset Bar -->
     <g transform="translate(14, 56)">
       <rect width="472" height="26" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-dasharray="3 3"/>
-      <text x="10" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#475569">📁 Preset: Account Q3 Executive Audit</text>
-      <rect x="390" y="4" width="72" height="18" rx="4" fill="#0F172A"/>
-      <text x="398" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#F8FAFC">🔒 GLOBAL</text>
+      <!-- Folder Icon -->
+      <g transform="translate(10, 7)">
+        <path d="M1 1C1 0.7 1.3 0.5 1.6 0.5H4L5.2 1.8H10.4C10.7 1.8 11 2.1 11 2.4V8C11 8.3 10.7 8.5 10.4 8.5H1.6C1.3 8.5 1 8.3 1 8V1Z" fill="#F59E0B"/>
+      </g>
+      <text x="26" y="17" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#475569">Preset: Account Q3 Executive Audit</text>
+      
+      <!-- Lock Badge -->
+      <rect x="385" y="4" width="77" height="18" rx="4" fill="#0F172A"/>
+      <g transform="translate(393, 7)">
+        <path d="M2.5 3.5V2C2.5 1.2 3.1 0.5 4 0.5C4.9 0.5 5.5 1.2 5.5 2V3.5M1.5 3.5H6.5C6.9 3.5 7.2 3.8 7.2 4.2V7.2C7.2 7.6 6.9 8 6.5 8H1.5C1.1 8 0.8 7.6 0.8 7.2V4.2C0.8 3.8 1.1 3.5 1.5 3.5Z" fill="none" stroke="#F8FAFC" stroke-width="1"/>
+      </g>
+      <text x="404" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#F8FAFC">GLOBAL</text>
     </g>
 
     <!-- Toolbar: Controls & Filters -->
@@ -108,23 +146,47 @@
       <rect width="472" height="34" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
       <!-- Object Picker Mock -->
       <rect x="8" y="5" width="110" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
-      <text x="16" y="21" font-family="-apple-system, sans-serif" font-size="11" fill="#1E293B">🏢 Account ▾</text>
+      <g transform="translate(14, 11)">
+        <path d="M1 9V1.5C1 1.2 1.2 1 1.5 1H5C5.3 1 5.5 1.2 5.5 1.5V9M5.5 4H8C8.3 4 8.5 4.2 8.5 4.5V9M0 9H9.5" fill="none" stroke="#475569" stroke-width="1"/>
+        <rect x="2" y="2.5" width="1" height="1" fill="#475569"/>
+        <rect x="3.5" y="2.5" width="1" height="1" fill="#475569"/>
+        <rect x="2" y="4.5" width="1" height="1" fill="#475569"/>
+        <rect x="3.5" y="4.5" width="1" height="1" fill="#475569"/>
+      </g>
+      <text x="27" y="21" font-family="-apple-system, sans-serif" font-size="11" fill="#1E293B">Account</text>
+      <polygon points="102,15 108,15 105,19" fill="#64748B"/>
 
       <!-- Search Box Mock -->
       <rect x="126" y="5" width="120" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
-      <text x="134" y="21" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">🔍 Search fields...</text>
+      <g transform="translate(133, 11)">
+        <circle cx="4" cy="4" r="3" fill="none" stroke="#94A3B8" stroke-width="1.2"/>
+        <line x1="6.2" y1="6.2" x2="9" y2="9" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+      <text x="146" y="21" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Search fields...</text>
 
       <!-- Transpose Button Group -->
       <rect x="254" y="5" width="70" height="24" rx="3" fill="#0176D3"/>
-      <text x="264" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">☷ Transpose</text>
+      <g transform="translate(260, 11)" fill="#FFFFFF">
+        <rect x="0" y="0" width="2" height="2"/>
+        <rect x="3.5" y="0" width="2" height="2"/>
+        <rect x="0" y="3.5" width="2" height="2"/>
+        <rect x="3.5" y="3.5" width="2" height="2"/>
+      </g>
+      <text x="268" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Transpose</text>
 
       <!-- Diff Only Active Button -->
       <rect x="330" y="5" width="72" height="24" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
-      <text x="338" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#92400E">⚡ Diff Only</text>
+      <g transform="translate(336, 10)">
+        <path d="M5 1L1 6H4L3 10L8 4.5H4.5L5 1Z" fill="#D97706"/>
+      </g>
+      <text x="347" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#92400E">Diff Only</text>
 
       <!-- Edit Button -->
       <rect x="408" y="5" width="56" height="24" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
-      <text x="418" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#475569">✏️ Edit</text>
+      <g transform="translate(414, 11)">
+        <path d="M1 7L1.5 8.5L3 8L8 3L6.5 1.5L1 7Z" fill="none" stroke="#475569" stroke-width="1"/>
+      </g>
+      <text x="426" y="21" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#475569">Edit</text>
     </g>
 
     <!-- Transposed Matrix Table Mock -->
@@ -132,7 +194,12 @@
       <!-- Table Header -->
       <rect width="472" height="28" fill="#F1F5F9" stroke="#E2E8F0"/>
       <text x="12" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#475569">FIELD (Y-AXIS)</text>
-      <text x="140" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0176D3">Acme Corp ★ Base</text>
+      
+      <!-- Base Header with Star Icon -->
+      <text x="140" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0176D3">Acme Corp</text>
+      <polygon points="194,11 195.5,13.8 198.5,14 196.2,16 196.8,19 194,17.4 191.2,19 191.8,16 189.5,14 192.5,13.8" fill="#1D4ED8"/>
+      <text x="202" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0176D3">Base</text>
+
       <text x="255" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E293B">Global Media Inc</text>
       <text x="370" y="18" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E293B">Apex Logistics</text>
 
@@ -148,7 +215,14 @@
       <!-- Row 2: Annual Revenue (DIFF ROW - Amber Highlight) -->
       <g transform="translate(0, 60)">
         <rect width="472" height="34" fill="#FFFDF5" stroke="#FDE68A"/>
-        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Annual Revenue ⚠️</text>
+        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Annual Revenue</text>
+        <!-- Warning Triangle Icon -->
+        <g transform="translate(94, 11)">
+          <path d="M5 1L0.5 9H9.5L5 1Z" fill="#F59E0B" stroke="#D97706" stroke-width="0.6"/>
+          <line x1="5" y1="3.5" x2="5" y2="6.2" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+          <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF"/>
+        </g>
+
         <rect x="135" y="4" width="105" height="26" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
         <text x="142" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#0F172A">$5,200,000</text>
         
@@ -164,7 +238,12 @@
       <!-- Row 3: Rating (DIFF ROW - Amber Highlight) -->
       <g transform="translate(0, 94)">
         <rect width="472" height="34" fill="#FFFDF5" stroke="#FDE68A"/>
-        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Rating ⚠️</text>
+        <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#92400E">Rating</text>
+        <g transform="translate(48, 11)">
+          <path d="M5 1L0.5 9H9.5L5 1Z" fill="#F59E0B" stroke="#D97706" stroke-width="0.6"/>
+          <line x1="5" y1="3.5" x2="5" y2="6.2" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+          <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF"/>
+        </g>
         <text x="140" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#0F172A">Hot</text>
         
         <rect x="250" y="4" width="70" height="24" rx="3" fill="#FEF3C7" stroke="#F59E0B"/>
@@ -197,7 +276,8 @@
         <rect width="472" height="30" fill="#F8FAFC" stroke="#E2E8F0"/>
         <text x="12" y="20" font-family="-apple-system, sans-serif" font-weight="600" font-size="10" fill="#64748B">3 Records Loaded • 2 Divergent Fields Identified</text>
         <rect x="365" y="5" width="98" height="20" rx="3" fill="#E2E8F0"/>
-        <text x="374" y="19" font-family="-apple-system, sans-serif" font-weight="600" font-size="9" fill="#334155">Auto-Saved ✓</text>
+        <text x="374" y="19" font-family="-apple-system, sans-serif" font-weight="600" font-size="9" fill="#334155">Auto-Saved</text>
+        <polyline points="432,15 435,18 440,11" fill="none" stroke="#166534" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
     </g>
   </g>

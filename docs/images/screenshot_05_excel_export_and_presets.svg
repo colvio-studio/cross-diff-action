@@ -18,7 +18,11 @@
   <text x="56" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#0176D3">Salesforce</text>
   
   <rect x="520" y="9" width="480" height="32" rx="4" fill="#F3F3F3" stroke="#C9C9C9"/>
-  <text x="536" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">🔍 Search Salesforce...</text>
+  <g transform="translate(534, 18)">
+    <circle cx="5" cy="5" r="4" fill="none" stroke="#706E6B" stroke-width="1.4"/>
+    <line x1="8" y1="8" x2="12" y2="12" stroke="#706E6B" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <text x="554" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">Search Salesforce...</text>
 
   <g transform="translate(1820, 13)">
     <circle cx="12" cy="12" r="12" fill="#0176D3"/>
@@ -32,9 +36,20 @@
     <text x="80" y="27" font-weight="600" fill="#706E6B">Accounts</text>
     <text x="165" y="27" font-weight="600" fill="#706E6B">Opportunities</text>
     
-    <rect x="270" y="0" width="155" height="44" fill="#F3F3F3"/>
-    <line x1="270" y1="42" x2="425" y2="42" stroke="#0176D3" stroke-width="3"/>
-    <text x="290" y="27" font-weight="700" fill="#0176D3">☷ CrossDiffAction</text>
+    <rect x="270" y="0" width="165" height="44" fill="#F3F3F3"/>
+    <line x1="270" y1="42" x2="435" y2="42" stroke="#0176D3" stroke-width="3"/>
+    <g transform="translate(284, 17)" fill="#0176D3">
+      <rect x="0" y="0" width="2.5" height="2.5"/>
+      <rect x="4" y="0" width="2.5" height="2.5"/>
+      <rect x="8" y="0" width="2.5" height="2.5"/>
+      <rect x="0" y="4" width="2.5" height="2.5"/>
+      <rect x="4" y="4" width="2.5" height="2.5"/>
+      <rect x="8" y="4" width="2.5" height="2.5"/>
+      <rect x="0" y="8" width="2.5" height="2.5"/>
+      <rect x="4" y="8" width="2.5" height="2.5"/>
+      <rect x="8" y="8" width="2.5" height="2.5"/>
+    </g>
+    <text x="300" y="27" font-weight="700" fill="#0176D3">CrossDiffAction</text>
 
     <!-- Custom Reports Tab with Highlight -->
     <text x="455" y="27" font-weight="700" fill="#0F172A">Reports (Audit Logs)</text>
@@ -56,7 +71,17 @@
     <!-- Component Header -->
     <g transform="translate(24, 20)">
       <rect x="0" y="0" width="36" height="36" rx="6" fill="#0176D3"/>
-      <text x="8" y="24" font-size="18" fill="#FFFFFF">☷</text>
+      <g transform="translate(10, 10)" fill="#FFFFFF">
+        <rect x="0" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="0" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="0" y="12" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="12" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="12" width="3.5" height="3.5" rx="0.5"/>
+      </g>
       
       <text x="48" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#0F172A">CrossDiffAction</text>
       <rect x="235" y="6" width="90" height="24" rx="12" fill="#E0E7FF"/>
@@ -64,61 +89,61 @@
 
       <!-- Action Buttons Right (With Open Export Dropdown) -->
       <g transform="translate(1330, 0)">
-        <rect x="0" y="2" width="110" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
-        <text x="14" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">⟳ Refresh (F5)</text>
+        <rect x="0" y="2" width="115" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <g transform="translate(12, 12)" fill="none" stroke="#475569" stroke-width="1.3">
+          <path d="M8 2.5A4.5 4.5 0 1 0 10.5 6"/>
+          <polygon points="8,0.5 8,4.5 11.5,4.5" fill="#475569"/>
+        </g>
+        <text x="30" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">Refresh (F5)</text>
 
-        <rect x="122" y="2" width="125" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
-        <text x="136" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">📋 Copy Summary</text>
+        <rect x="127" y="2" width="125" height="32" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <g transform="translate(137, 11)" fill="none" stroke="#475569" stroke-width="1.2">
+          <rect x="1" y="2" width="8" height="10" rx="1"/>
+          <path d="M3 2V1C3 0.7 3.3 0.5 3.6 0.5H6.4C6.7 0.5 7 0.7 7 1V2"/>
+        </g>
+        <text x="153" y="23" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">Copy Summary</text>
 
         <!-- Active Export Button Group -->
-        <rect x="259" y="2" width="115" height="32" rx="4" fill="#0176D3"/>
-        <text x="273" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">📥 Export XLSX</text>
-
-        <rect x="376" y="2" width="32" height="32" rx="4" fill="#015EA6"/>
-        <text x="387" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">▴</text>
-
-        <!-- OPEN EXPORT DROPDOWN MENU (SLDS Menu) -->
-        <g transform="translate(240, 38)">
-          <rect width="170" height="116" rx="4" fill="#FFFFFF" filter="url(#dropdown_shadow)" stroke="#CBD5E1"/>
-          
-          <!-- Item 1: XLSX (Default) -->
-          <g transform="translate(0, 0)">
-            <rect width="170" height="38" fill="#F1F5F9"/>
-            <text x="14" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0176D3">📊 Excel (.xlsx) ✓</text>
-          </g>
-
-          <!-- Item 2: XLS (Legacy) -->
-          <g transform="translate(0, 38)">
-            <rect width="170" height="38" fill="#FFFFFF"/>
-            <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">📄 Excel 97-03 (.xls)</text>
-          </g>
-
-          <!-- Item 3: CSV -->
-          <g transform="translate(0, 76)">
-            <rect width="170" height="38" fill="#FFFFFF"/>
-            <text x="14" y="24" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">📑 Comma-Sep (.csv)</text>
-          </g>
+        <rect x="264" y="2" width="115" height="32" rx="4" fill="#0176D3"/>
+        <g transform="translate(274, 11)" fill="none" stroke="#FFFFFF" stroke-width="1.3">
+          <path d="M1 8V11C1 11.5 1.5 12 2 12H10C10.5 12 11 11.5 11 11V8"/>
+          <path d="M6 1V8M3.5 5.5L6 8L8.5 5.5"/>
         </g>
+        <text x="292" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">Export XLSX</text>
+
+        <rect x="381" y="2" width="32" height="32" rx="4" fill="#015EA6"/>
+        <polygon points="392,20 402,20 397,14" fill="#FFFFFF"/>
       </g>
     </g>
 
     <!-- Preset Management Bar with Open Presets Dropdown -->
     <g transform="translate(24, 76)">
       <rect width="1808" height="42" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-dasharray="4 4"/>
-      <text x="16" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#334155">📁 Comparison Preset:</text>
+      <g transform="translate(16, 14)">
+        <path d="M1 1C1 0.7 1.3 0.5 1.6 0.5H5L6.5 2H12.4C12.7 2 13 2.3 13 2.6V10C13 10.3 12.7 10.5 12.4 10.5H1.6C1.3 10.5 1 10.3 1 10V1Z" fill="#F59E0B"/>
+      </g>
+      <text x="35" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#334155">Comparison Preset:</text>
       
       <!-- Preset Input Box -->
       <rect x="180" y="8" width="360" height="28" rx="4" fill="#FFFFFF" stroke="#0176D3" stroke-width="2"/>
       <text x="194" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0F172A">
         Global: Q3 Opportunity Pipeline Review
       </text>
-      <text x="520" y="26" font-size="11" fill="#0176D3">▴</text>
+      <polygon points="522,23 528,23 525,18" fill="#0176D3"/>
 
-      <rect x="550" y="10" width="105" height="24" rx="4" fill="#0F172A"/>
-      <text x="562" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#F8FAFC">🔒 GLOBAL LOCKED</text>
+      <rect x="550" y="10" width="112" height="24" rx="4" fill="#0F172A"/>
+      <g transform="translate(558, 16)" fill="#F8FAFC">
+        <rect x="1" y="4" width="7" height="5" rx="1"/>
+        <path d="M2 4V2.5C2 1.4 2.8 0.5 3.8 0.5H4.2C5.2 0.5 6 1.4 6 2.5V4" fill="none" stroke="#F8FAFC" stroke-width="1.1"/>
+      </g>
+      <text x="572" y="26" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#F8FAFC">GLOBAL LOCKED</text>
 
-      <rect x="668" y="10" width="150" height="24" rx="4" fill="#F1F5F9" stroke="#CBD5E1"/>
-      <text x="678" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" fill="#475569">👤 Created by: Admin (Ops)</text>
+      <rect x="672" y="10" width="155" height="24" rx="4" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <g transform="translate(680, 16)" fill="#64748B">
+        <circle cx="4.5" cy="3" r="2.5"/>
+        <path d="M0.5 10C0.5 7.8 2.3 6 4.5 6C6.7 6 8.5 7.8 8.5 10Z"/>
+      </g>
+      <text x="696" y="26" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" fill="#475569">Created by: Admin (Ops)</text>
 
       <!-- OPEN PRESET DROPDOWN LIST -->
       <g transform="translate(180, 40)">
@@ -131,16 +156,24 @@
         <!-- Preset 1: Selected -->
         <g transform="translate(0, 24)">
           <rect width="360" height="32" fill="#EFF6FF"/>
-          <text x="12" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1D4ED8">
-            🔒 Q3 Opportunity Pipeline Review (Active)
+          <g transform="translate(14, 10)" fill="#1D4ED8">
+            <rect x="1" y="4" width="7" height="5" rx="1"/>
+            <path d="M2 4V2.5C2 1.4 2.8 0.5 3.8 0.5H4.2C5.2 0.5 6 1.4 6 2.5V4" fill="none" stroke="#1D4ED8" stroke-width="1.1"/>
+          </g>
+          <text x="28" y="21" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#1D4ED8">
+            Q3 Opportunity Pipeline Review (Active)
           </text>
         </g>
 
         <!-- Preset 2 -->
         <g transform="translate(0, 56)">
           <rect width="360" height="32" fill="#FFFFFF"/>
-          <text x="12" y="21" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">
-            🔒 Account Duplicate Resolution Matrix
+          <g transform="translate(14, 10)" fill="#64748B">
+            <rect x="1" y="4" width="7" height="5" rx="1"/>
+            <path d="M2 4V2.5C2 1.4 2.8 0.5 3.8 0.5H4.2C5.2 0.5 6 1.4 6 2.5V4" fill="none" stroke="#64748B" stroke-width="1.1"/>
+          </g>
+          <text x="28" y="21" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">
+            Account Duplicate Resolution Matrix
           </text>
         </g>
 
@@ -152,10 +185,49 @@
 
         <g transform="translate(0, 112)">
           <rect width="360" height="32" fill="#FFFFFF"/>
-          <text x="12" y="21" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">
-            ⭐ Competitor Pricing Matrix - Custom
+          <polygon points="17,11 18.5,14.2 22,14.7 19.5,17.1 20.1,20.6 17,19 13.9,20.6 14.5,17.1 12,14.7 15.5,14.2" fill="#F59E0B"/>
+          <text x="28" y="21" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">
+            Competitor Pricing Matrix - Custom
           </text>
         </g>
+      </g>
+    </g>
+
+    <!-- OPEN EXPORT DROPDOWN MENU (Rendered on top of preset bar) -->
+    <g transform="translate(1594, 58)">
+      <rect width="170" height="116" rx="4" fill="#FFFFFF" filter="url(#dropdown_shadow)" stroke="#CBD5E1"/>
+      
+      <!-- Item 1: XLSX (Default) -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="38" fill="#F1F5F9"/>
+        <g transform="translate(14, 13)" fill="none" stroke="#0176D3" stroke-width="1.2">
+          <rect x="1" y="1" width="10" height="10" rx="1"/>
+          <line x1="1" y1="5" x2="11" y2="5"/>
+          <line x1="5" y1="1" x2="5" y2="11"/>
+        </g>
+        <text x="32" y="24" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#0176D3">Excel (.xlsx)</text>
+        <path d="M145 19L148 22L154 16" fill="none" stroke="#0176D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Item 2: XLS (Legacy) -->
+      <g transform="translate(0, 38)">
+        <rect width="170" height="38" fill="#FFFFFF"/>
+        <g transform="translate(14, 13)" fill="none" stroke="#64748B" stroke-width="1.2">
+          <path d="M2 1H7L10 4V11H2V1Z"/>
+          <polyline points="7,1 7,4 10,4"/>
+        </g>
+        <text x="32" y="24" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Excel 97-03 (.xls)</text>
+      </g>
+
+      <!-- Item 3: CSV -->
+      <g transform="translate(0, 76)">
+        <rect width="170" height="38" fill="#FFFFFF"/>
+        <g transform="translate(14, 13)" fill="none" stroke="#64748B" stroke-width="1.2">
+          <path d="M2 1H7L10 4V11H2V1Z"/>
+          <line x1="4" y1="6" x2="8" y2="6"/>
+          <line x1="4" y1="8.5" x2="7" y2="8.5"/>
+        </g>
+        <text x="32" y="24" font-family="-apple-system, sans-serif" font-size="12" fill="#334155">Comma-Sep (.csv)</text>
       </g>
     </g>
 
@@ -170,8 +242,9 @@
       <g transform="translate(380, 0)">
         <rect x="0" y="0" width="350" height="48" fill="#EFF6FF" stroke="#BFDBFE"/>
         <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#1D4ED8">Oppty: Acme Cloud Modernization</text>
-        <rect x="245" y="12" width="90" height="24" rx="12" fill="#DBEAFE"/>
-        <text x="255" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">★ BASELINE</text>
+        <rect x="245" y="12" width="95" height="24" rx="12" fill="#DBEAFE"/>
+        <polygon points="256,18 257.5,21.2 261,21.7 258.5,24.1 259.1,27.6 256,26 252.9,27.6 253.5,24.1 251,21.7 254.5,21.2" fill="#1E40AF"/>
+        <text x="266" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">BASELINE</text>
       </g>
 
       <g transform="translate(735, 0)">
@@ -190,7 +263,12 @@
       <!-- Row 1: Amount -->
       <g transform="translate(0, 48)">
         <rect width="1808" height="46" fill="#FFFDF5" stroke="#FDE68A"/>
-        <text x="20" y="28" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">Amount (Currency) ⚠️</text>
+        <text x="20" y="28" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">Amount (Currency)</text>
+        <g transform="translate(160, 17)">
+          <path d="M5 1L0.5 9H9.5L5 1Z" fill="#F59E0B" stroke="#D97706" stroke-width="0.8"/>
+          <line x1="5" y1="3.5" x2="5" y2="6" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+          <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF"/>
+        </g>
         <text x="398" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">$450,000</text>
         <text x="753" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#92400E">$120,000 [Diff]</text>
         <text x="1108" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#92400E">$780,000 [Diff]</text>
@@ -200,7 +278,12 @@
       <!-- Row 2: StageName -->
       <g transform="translate(0, 94)">
         <rect width="1808" height="46" fill="#FFFDF5" stroke="#FDE68A"/>
-        <text x="20" y="28" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">Stage (Picklist) ⚠️</text>
+        <text x="20" y="28" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">Stage (Picklist)</text>
+        <g transform="translate(140, 17)">
+          <path d="M5 1L0.5 9H9.5L5 1Z" fill="#F59E0B" stroke="#D97706" stroke-width="0.8"/>
+          <line x1="5" y1="3.5" x2="5" y2="6" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+          <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF"/>
+        </g>
         <text x="398" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">Negotiation / Review</text>
         <text x="753" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#92400E">Proposal / Price Quote [Diff]</text>
         <text x="1108" y="28" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#92400E">Closed Won [Diff]</text>
@@ -224,7 +307,7 @@
       <g transform="translate(20, 20)">
         <!-- Green Checkmark Icon -->
         <circle cx="16" cy="16" r="16" fill="#10B981"/>
-        <text x="11" y="22" font-size="16" fill="#FFFFFF">✓</text>
+        <path d="M11 16L14.5 19.5L21.5 12" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- Toast Body -->
         <g transform="translate(44, 0)">
@@ -234,13 +317,18 @@
           <text y="32" font-family="-apple-system, sans-serif" font-size="12" fill="#A7F3D0">
             File: <tspan font-weight="700">CrossDiff_Opportunity_Audit_20260926.xlsx</tspan> (4 Records, 24 Transposed Fields)
           </text>
-          <text y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#D1FAE5">
-            🛡️ Audit Log Recorded: <tspan font-weight="700">CrossDiff_Export_Log__c #EXP-00142</tspan> (User: Admin, Type: XLSX, 100% In-Memory)
-          </text>
+          <g transform="translate(0, 40)">
+            <g transform="translate(0, 0)" fill="none" stroke="#A7F3D0" stroke-width="1.2">
+              <path d="M1 1L5.5 0L10 1V5.5C10 8.5 5.5 10.5 5.5 10.5C5.5 10.5 1 8.5 1 5.5V1Z" fill="#065F46"/>
+            </g>
+            <text x="16" y="10" font-family="-apple-system, sans-serif" font-size="11" fill="#D1FAE5">
+              Audit Log Recorded: <tspan font-weight="700">CrossDiff_Export_Log__c #EXP-00142</tspan> (User: Admin, Type: XLSX, 100% In-Memory)
+            </text>
+          </g>
         </g>
 
         <!-- Close Button -->
-        <text x="670" y="16" font-size="16" fill="#A7F3D0">✕</text>
+        <path d="M668 10L676 18M676 10L668 18" stroke="#A7F3D0" stroke-width="1.5" stroke-linecap="round"/>
       </g>
     </g>
 
@@ -250,8 +338,11 @@
       <text x="16" y="25" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#64748B">
         100% Client-Side In-Memory SheetJS Engine • Enterprise Audit Compliance Logged • Zero Data Exfiltration
       </text>
-      <text x="1570" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#10B981">
-        ✓ Audit Tracked (EXP-00142)
+      <g transform="translate(1550, 16)">
+        <path d="M2 7L5 10L11 3" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="1568" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#10B981">
+        Audit Tracked (EXP-00142)
       </text>
     </g>
   </g>

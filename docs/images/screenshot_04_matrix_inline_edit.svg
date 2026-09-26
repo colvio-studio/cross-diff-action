@@ -18,7 +18,11 @@
   <text x="56" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#0176D3">Salesforce</text>
   
   <rect x="520" y="9" width="480" height="32" rx="4" fill="#F3F3F3" stroke="#C9C9C9"/>
-  <text x="536" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">🔍 Search Salesforce...</text>
+  <g transform="translate(534, 18)">
+    <circle cx="5" cy="5" r="4" fill="none" stroke="#706E6B" stroke-width="1.4"/>
+    <line x1="8" y1="8" x2="12" y2="12" stroke="#706E6B" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <text x="554" y="30" font-family="-apple-system, sans-serif" font-size="13" fill="#706E6B">Search Salesforce...</text>
 
   <g transform="translate(1820, 13)">
     <circle cx="12" cy="12" r="12" fill="#0176D3"/>
@@ -32,9 +36,20 @@
     <text x="80" y="27" font-weight="600" fill="#706E6B">Accounts</text>
     <text x="165" y="27" font-weight="600" fill="#706E6B">Opportunities</text>
     
-    <rect x="270" y="0" width="155" height="44" fill="#F3F3F3"/>
-    <line x1="270" y1="42" x2="425" y2="42" stroke="#0176D3" stroke-width="3"/>
-    <text x="290" y="27" font-weight="700" fill="#0176D3">☷ CrossDiffAction</text>
+    <rect x="270" y="0" width="165" height="44" fill="#F3F3F3"/>
+    <line x1="270" y1="42" x2="435" y2="42" stroke="#0176D3" stroke-width="3"/>
+    <g transform="translate(284, 17)" fill="#0176D3">
+      <rect x="0" y="0" width="2.5" height="2.5"/>
+      <rect x="4" y="0" width="2.5" height="2.5"/>
+      <rect x="8" y="0" width="2.5" height="2.5"/>
+      <rect x="0" y="4" width="2.5" height="2.5"/>
+      <rect x="4" y="4" width="2.5" height="2.5"/>
+      <rect x="8" y="4" width="2.5" height="2.5"/>
+      <rect x="0" y="8" width="2.5" height="2.5"/>
+      <rect x="4" y="8" width="2.5" height="2.5"/>
+      <rect x="8" y="8" width="2.5" height="2.5"/>
+    </g>
+    <text x="300" y="27" font-weight="700" fill="#0176D3">CrossDiffAction</text>
 
     <text x="455" y="27" font-weight="600" fill="#706E6B">Reports</text>
     <text x="535" y="27" font-weight="600" fill="#706E6B">Dashboards</text>
@@ -53,7 +68,17 @@
     <!-- Component Header -->
     <g transform="translate(24, 20)">
       <rect x="0" y="0" width="36" height="36" rx="6" fill="#0176D3"/>
-      <text x="8" y="24" font-size="18" fill="#FFFFFF">☷</text>
+      <g transform="translate(10, 10)" fill="#FFFFFF">
+        <rect x="0" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="0" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="0" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="6" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="0" y="12" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="6" y="12" width="3.5" height="3.5" rx="0.5"/>
+        <rect x="12" y="12" width="3.5" height="3.5" rx="0.5"/>
+      </g>
       
       <text x="48" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#0F172A">CrossDiffAction</text>
       <rect x="235" y="6" width="90" height="24" rx="12" fill="#E0E7FF"/>
@@ -61,7 +86,10 @@
 
       <!-- Edit Mode Active Badge -->
       <rect x="338" y="6" width="170" height="24" rx="12" fill="#DBEAFE"/>
-      <text x="350" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#1D4ED8">✏️ BULK EDIT ACTIVE</text>
+      <g transform="translate(348, 12)" stroke="#1D4ED8" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 1.5L9.5 4L3 10.5H0.5V8L7 1.5Z"/>
+      </g>
+      <text x="364" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#1D4ED8">BULK EDIT ACTIVE</text>
     </g>
 
     <!-- TOP DOCKED SAVE BAR (CDA-25 / CDA-47 Implementation) -->
@@ -69,8 +97,12 @@
       <rect width="1808" height="46" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
       
       <g transform="translate(18, 12)">
-        <text x="0" y="18" font-size="16">⚠️</text>
-        <text x="26" y="18" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">
+        <g transform="translate(0, 5)">
+          <path d="M7 1L0.5 12H13.5L7 1Z" fill="#F59E0B" stroke="#D97706" stroke-width="0.8"/>
+          <line x1="7" y1="5" x2="7" y2="8" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+          <circle cx="7" cy="10" r="0.8" fill="#FFFFFF"/>
+        </g>
+        <text x="24" y="18" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#92400E">
           Unsaved Changes in Matrix
         </text>
         <rect x="210" y="2" width="165" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A"/>
@@ -85,7 +117,12 @@
         <text x="18" y="21" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" fill="#475569">Cancel</text>
 
         <rect x="102" y="0" width="160" height="32" rx="4" fill="#0176D3"/>
-        <text x="118" y="21" font-family="-apple-system, sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">💾 Save All Changes</text>
+        <g transform="translate(116, 9)" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 1H10L13 4V13H1V1Z"/>
+          <rect x="3" y="1" width="7" height="4" fill="#FFFFFF"/>
+          <rect x="3" y="8" width="7" height="5" fill="#FFFFFF"/>
+        </g>
+        <text x="136" y="21" font-family="-apple-system, sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">Save All Changes</text>
       </g>
     </g>
 
@@ -102,7 +139,8 @@
         <rect x="0" y="0" width="350" height="52" fill="#EFF6FF" stroke="#BFDBFE"/>
         <text x="18" y="24" font-family="-apple-system, sans-serif" font-weight="800" font-size="13" fill="#1D4ED8">Acme Corporation</text>
         <rect x="230" y="8" width="105" height="22" rx="11" fill="#DBEAFE"/>
-        <text x="240" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">★ BASE RECORD</text>
+        <polygon points="242,14 243.5,17.2 247,17.7 244.5,20.1 245.1,23.6 242,22 238.9,23.6 239.5,20.1 237,17.7 240.5,17.2" fill="#1E40AF"/>
+        <text x="252" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" fill="#1E40AF">BASE RECORD</text>
         <text x="18" y="44" font-family="-apple-system, sans-serif" font-size="10" fill="#3B82F6">Standard Template Source</text>
       </g>
 
@@ -122,7 +160,12 @@
       <g transform="translate(1445, 0)">
         <text x="18" y="25" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#0F172A">CloudPeak Systems</text>
         <rect x="18" y="32" width="125" height="16" rx="3" fill="#FEE2E2"/>
-        <text x="24" y="44" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#991B1B">⚠️ 1 VALIDATION ERR</text>
+        <g transform="translate(24, 34)">
+          <path d="M5 1L0.5 9H9.5L5 1Z" fill="#DC2626"/>
+          <line x1="5" y1="3.5" x2="5" y2="6" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+          <circle cx="5" cy="7.5" r="0.6" fill="#FFFFFF"/>
+        </g>
+        <text x="38" y="44" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#991B1B">1 VALIDATION ERR</text>
       </g>
 
       <!-- Row 1: Account Type (With Copy From Base Button) -->
@@ -137,7 +180,11 @@
           
           <!-- Copy from Base Button -->
           <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
-          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+          <g transform="translate(208, 10)" fill="none" stroke="#FFFFFF" stroke-width="1.2">
+            <rect x="1" y="2" width="8" height="10" rx="1"/>
+            <path d="M3 2V1C3 0.7 3.3 0.5 3.6 0.5H6.4C6.7 0.5 7 0.7 7 1V2"/>
+          </g>
+          <text x="224" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Copy to All</text>
         </g>
 
         <!-- Col 2: Editable Cell (Selected/Dropdown) -->
@@ -153,14 +200,14 @@
         <g transform="translate(1100, 12)">
           <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Prospect</text>
-          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+          <polygon points="295,19 303,19 299,24" fill="#64748B"/>
         </g>
 
         <!-- Col 4: Editable Cell -->
         <g transform="translate(1455, 12)">
           <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Technology Partner</text>
-          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+          <polygon points="295,19 303,19 299,24" fill="#64748B"/>
         </g>
       </g>
 
@@ -175,7 +222,11 @@
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">$12,500,000</text>
           
           <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
-          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+          <g transform="translate(208, 10)" fill="none" stroke="#FFFFFF" stroke-width="1.2">
+            <rect x="1" y="2" width="8" height="10" rx="1"/>
+            <path d="M3 2V1C3 0.7 3.3 0.5 3.6 0.5H6.4C6.7 0.5 7 0.7 7 1V2"/>
+          </g>
+          <text x="224" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Copy to All</text>
         </g>
 
         <!-- Col 2: Edited Cell (Valid Draft) -->
@@ -197,12 +248,16 @@
           <!-- Red Error Input Box -->
           <rect width="320" height="36" rx="4" fill="#FEF2F2" stroke="#EA001E" stroke-width="2.5"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#991B1B">-$500,000</text>
-          <text x="292" y="24" font-size="14" fill="#EA001E">⚠️</text>
+          <g transform="translate(292, 12)">
+            <path d="M6 1L0.5 11H11.5L6 1Z" fill="#EA001E"/>
+            <line x1="6" y1="4.5" x2="6" y2="7.5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="6" cy="9.2" r="0.8" fill="#FFFFFF"/>
+          </g>
 
           <!-- Error Tooltip / Help Text Bubble -->
           <g transform="translate(0, 42)">
-            <rect width="320" height="26" rx="4" fill="#EA001E"/>
-            <text x="12" y="17" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">
+            <rect width="335" height="26" rx="4" fill="#EA001E"/>
+            <text x="10" y="17" font-family="-apple-system, sans-serif" font-weight="700" font-size="9.5" fill="#FFFFFF">
               FIELD_CUSTOM_VALIDATION_EXCEPTION: Revenue cannot be negative
             </text>
           </g>
@@ -218,14 +273,18 @@
           <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#3B82F6"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-weight="700" font-size="13" fill="#1D4ED8">Hot</text>
           <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
-          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+          <g transform="translate(208, 10)" fill="none" stroke="#FFFFFF" stroke-width="1.2">
+            <rect x="1" y="2" width="8" height="10" rx="1"/>
+            <path d="M3 2V1C3 0.7 3.3 0.5 3.6 0.5H6.4C6.7 0.5 7 0.7 7 1V2"/>
+          </g>
+          <text x="224" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Copy to All</text>
         </g>
 
         <!-- Col 2: Warm -->
         <g transform="translate(745, 10)">
           <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Warm</text>
-          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+          <polygon points="295,19 303,19 299,24" fill="#64748B"/>
         </g>
 
         <!-- Col 3: Draft Changed to Hot -->
@@ -240,7 +299,7 @@
         <g transform="translate(1455, 10)">
           <rect width="320" height="36" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#334155">Hot</text>
-          <text x="295" y="23" font-size="11" fill="#64748B">▾</text>
+          <polygon points="295,19 303,19 299,24" fill="#64748B"/>
         </g>
       </g>
 
@@ -253,7 +312,11 @@
           <rect width="190" height="36" rx="4" fill="#EFF6FF" stroke="#BFDBFE"/>
           <text x="12" y="23" font-family="-apple-system, sans-serif" font-size="13" fill="#1D4ED8">San Francisco</text>
           <rect x="200" y="2" width="130" height="32" rx="4" fill="#0176D3"/>
-          <text x="210" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">📋 Copy to All</text>
+          <g transform="translate(208, 10)" fill="none" stroke="#FFFFFF" stroke-width="1.2">
+            <rect x="1" y="2" width="8" height="10" rx="1"/>
+            <path d="M3 2V1C3 0.7 3.3 0.5 3.6 0.5H6.4C6.7 0.5 7 0.7 7 1V2"/>
+          </g>
+          <text x="224" y="22" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Copy to All</text>
         </g>
 
         <g transform="translate(745, 10)">
