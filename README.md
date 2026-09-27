@@ -138,7 +138,7 @@ Assign one of the bundled permission sets to your users:
 
 ## 🌍 Global Multi-Language Support
 
-CrossDiffAction comes pre-configured with native translation support across **8 major enterprise languages**:
+CrossDiffAction comes pre-configured with native translation support across **7 major enterprise languages**:
 - 🇺🇸 English (`en_US` - Default)
 - 🇯🇵 Japanese (`ja` - 日本語)
 - 🇩🇪 German (`de` - Deutsch)
@@ -146,7 +146,6 @@ CrossDiffAction comes pre-configured with native translation support across **8 
 - 🇪🇸 Spanish (`es` - Español)
 - 🇨🇳 Simplified Chinese (`zh_CN` - 简体中文)
 - 🇹🇼 Traditional Chinese (`zh_TW` - 繁體中文)
-- 🇰🇷 Korean (`ko` - 한국어)
 
 ---
 
@@ -156,7 +155,7 @@ CrossDiffAction comes pre-configured with native translation support across **8 
 | :--- | :--- | :--- | :--- |
 | **Standard** | **$9** /user/month | Small Teams & Sales Ops | Transposed Matrix, Diff Finder, Base Record Comparator, CSV Export, Personal Presets |
 | **Professional** | **$15** /user/month | Growth Businesses | All Standard features + Character Diff Modal, Inline Bulk Edit, Copy from Base, XLSX Export |
-| **Enterprise** | **Custom** (Volume/Contract) | Large Enterprise & Regulated | All Pro features + Organization-Wide Locked Presets, Automated Export Audit Logs, Priority SLA |
+| **Enterprise** | **$25** /user/month<br/>*(min. 3 users)* | Large Enterprise & Regulated | All Pro features + Organization-Wide Locked Presets, Automated Export Audit Logs, Priority SLA |
 
 ---
 
