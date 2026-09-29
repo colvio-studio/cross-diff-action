@@ -1,32 +1,26 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient: Clean Light Ice -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="50%" stop-color="#EEF2FF"/>
       <stop offset="100%" stop-color="#E0E7FF"/>
     </linearGradient>
 
-    <!-- Transpose Arc Gradient: Electric Cyan & Indigo -->
     <linearGradient id="arc" x1="0%" y1="100%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#4F46E5"/>
       <stop offset="45%" stop-color="#06B6D4"/>
       <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
 
-    <!-- Circle 1: Royal Indigo -->
     <linearGradient id="circle_blue" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#4F46E5"/>
       <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-
-    <!-- Circle 2: Amber Gold (Diff Detected) -->
     <linearGradient id="circle_gold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FDE047"/>
       <stop offset="100%" stop-color="#F59E0B"/>
     </linearGradient>
 
-    <!-- Drop Shadows -->
     <filter id="shadow_circles" x="-25%" y="-25%" width="150%" height="150%">
       <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312E81" flood-opacity="0.22"/>
     </filter>
@@ -38,11 +32,10 @@
     </filter>
   </defs>
 
-  <!-- Squircle Canvas & Border -->
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
   <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#C7D2FE" stroke-width="4"/>
 
-  <!-- TWO PURE DATA CIRCLES (Aligned baseline at y=387) -->
+  <!-- TWO PURE CIRCLES (cy = 325) -->
   <g filter="url(#shadow_circles)">
     <circle cx="236" cy="325" r="62" fill="url(#circle_blue)"/>
     <circle cx="236" cy="325" r="60.5" fill="none" stroke="#818CF8" stroke-width="3"/>
@@ -52,14 +45,16 @@
     <circle cx="368" cy="325" r="60.5" fill="none" stroke="#FEF08A" stroke-width="3"/>
   </g>
 
-  <!-- TRANSPOSE ARC & STEALTH WING FLETCHED HEAD (Vertical alignment at x=430) -->
+  <!-- ARC & FLETCHED ARROW HEAD -->
   <g filter="url(#arc_shadow)">
-    <!-- Base Gradient Body (38px wide) -->
-    <path d="M 76 375 C 116 185, 220 92, 366 92" fill="none" stroke="url(#arc)" stroke-width="38" stroke-linecap="round"/>
+    <!-- Base Gradient Body (38px) -->
+    <path d="M 76 375 C 116 185, 220 92, 380 92" fill="none" stroke="url(#arc)" stroke-width="38" stroke-linecap="round"/>
     <!-- Solid Crisp White Core Line -->
-    <path d="M 80 375 C 118 190, 220 92, 382 92" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <!-- Swept Wing Fletched Arrow Head -->
-    <path d="M 430 92 L 366 50 L 384 92 L 366 134 Z" fill="#0284C7" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
-    <path d="M 422 92 L 378 64 L 392 92 L 378 120 Z" fill="#38BDF8" fill-opacity="0.6"/>
+    <path d="M 80 375 C 118 190, 220 92, 396 92" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <!-- Swept Wing Fletched Head at Top-Right -->
+    <path d="M 444 92 L 380 50 L 398 92 L 380 134 Z" fill="#0284C7" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 436 92 L 392 64 L 406 92 L 392 120 Z" fill="#38BDF8" fill-opacity="0.6"/>
   </g>
+  
+  
 </svg>

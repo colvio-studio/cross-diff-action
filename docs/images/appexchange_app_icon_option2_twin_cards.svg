@@ -1,0 +1,85 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="opt2_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <filter id="card_shadow_opt2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="diff_badge_glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#F59E0B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="512" height="512" rx="112" fill="url(#opt2_bg)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"/>
+
+  <!-- Twin Column Cards -->
+  <g transform="translate(54, 54)" filter="url(#card_shadow_opt2)">
+
+    <!-- Card 1: Record A (Left Column - Baseline) -->
+    <g transform="translate(18, 20)">
+      <rect width="172" height="360" rx="24" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="3"/>
+      <!-- Header Bar -->
+      <path d="M 3 24 C 3 12 12 3 24 3 L 148 3 C 160 3 169 12 169 24 L 169 60 L 3 60 Z" fill="#0284C7"/>
+      <circle cx="36" cy="31" r="10" fill="#BAE6FD"/>
+      <rect x="56" y="26" width="86" height="10" rx="4" fill="#FFFFFF"/>
+
+      <!-- Row 1: Matching Value -->
+      <rect x="18" y="78" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="95" width="80" height="12" rx="4" fill="#64748B"/>
+
+      <!-- Row 2: BASELINE VALUE (Primary Blue Accent) -->
+      <rect x="18" y="140" width="136" height="58" rx="10" fill="#EFF6FF" stroke="#0284C7" stroke-width="2.5"/>
+      <rect x="30" y="162" width="96" height="14" rx="5" fill="#0284C7"/>
+
+      <!-- Row 3: Matching Value -->
+      <rect x="18" y="214" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="231" width="70" height="12" rx="4" fill="#64748B"/>
+
+      <!-- Row 4: Matching Value -->
+      <rect x="18" y="276" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="293" width="88" height="12" rx="4" fill="#64748B"/>
+    </g>
+
+    <!-- Card 2: Record B (Right Column - Comparison Target) -->
+    <g transform="translate(214, 20)">
+      <rect width="172" height="360" rx="24" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="3"/>
+      <!-- Header Bar -->
+      <path d="M 3 24 C 3 12 12 3 24 3 L 148 3 C 160 3 169 12 169 24 L 169 60 L 3 60 Z" fill="#0369A1"/>
+      <circle cx="36" cy="31" r="10" fill="#BAE6FD"/>
+      <rect x="56" y="26" width="86" height="10" rx="4" fill="#FFFFFF"/>
+
+      <!-- Row 1: Matching Value -->
+      <rect x="18" y="78" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="95" width="80" height="12" rx="4" fill="#64748B"/>
+
+      <!-- Row 2: DISCREPANCY DIFF ROW (Warm Amber Highlight!) -->
+      <g filter="url(#diff_badge_glow)">
+        <rect x="18" y="140" width="136" height="58" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="3"/>
+        <rect x="30" y="162" width="78" height="14" rx="5" fill="#D97706"/>
+        <!-- Discrepancy indicator dot -->
+        <circle cx="126" cy="169" r="6" fill="#F59E0B"/>
+      </g>
+
+      <!-- Row 3: Matching Value -->
+      <rect x="18" y="214" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="231" width="70" height="12" rx="4" fill="#64748B"/>
+
+      <!-- Row 4: Matching Value -->
+      <rect x="18" y="276" width="136" height="46" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <rect x="30" y="293" width="88" height="12" rx="4" fill="#64748B"/>
+    </g>
+
+    <!-- CENTER COMPARATOR BADGE (Floating Between Cards at Row 2) -->
+    <g transform="translate(172, 144)">
+      <circle cx="30" cy="25" r="28" fill="#0F172A" stroke="#F59E0B" stroke-width="3"/>
+      <!-- Horizontal Bidirectional Comparison Arrows -->
+      <path d="M 20 21 L 40 21 M 34 16 L 40 21 L 34 26" fill="none" stroke="#FCD34D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 40 29 L 20 29 M 26 24 L 20 29 L 26 34" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 抽象化＆クリーン化 3案比較 (v5)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-a { background: #312E81; color: #A5B4FC; border: 1px solid #4338CA; }
+    .badge-b { background: #082F49; color: #38BDF8; border: 1px solid #0369A1; }
+    .badge-c { background: #451A03; color: #FBBF24; border: 1px solid #78350F; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 抽象化＆クリーン化 3案 (v5)</h1>
+    <p>「ヘッダからヘッダへの転置」というコア概念を維持しつつ、<strong>視覚的ノイズを極限まで削ぎ落として洗練させた 3 つの抽象化アプローチ</strong>です。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION A -->
+    <div class="concept-card">
+      <span class="badge badge-a">案 A • 内包型ミニマルマトリクス</span>
+      <div class="title">Integrated Clean Matrix</div>
+      <div class="desc">外周の隙間にあるピルを全廃し、ボードの最上行（列ヘッダ）と最左列（行ヘッダ）に統合。余白の美学により、極めて洗練されたモダンUIデザインを実現。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v5_optA_integrated_512.png" alt="Option A Integrated">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optA_integrated_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optA_integrated_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optA_integrated_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>抽象化手法</strong>: 外周のピルをなくし、ボード内の最左列と最上行をヘッダーセル化。</li>
+          <li><strong>転置フロー</strong>: 左下行ヘッダから右上列ヘッダへ、ボード内を美しく跨ぐアーク。</li>
+          <li><strong>印象</strong>: 一番ごちゃつきがなく、ノイズゼロ。モダンSaaSの最高峰。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION B -->
+    <div class="concept-card">
+      <span class="badge badge-b">案 B • 一体型L字トラックフレーム</span>
+      <div class="title">Unified L-Spine Track</div>
+      <div class="desc">隙間のバラバラなピルを「1本のシームレスなL字レール」に一本化。左下の行3ノッチから右上の列3ノッチへと外周を優雅に旋回する幾何学的な美しさ。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v5_optB_lspine_512.png" alt="Option B L-Spine">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optB_lspine_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optB_lspine_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optB_lspine_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>抽象化手法</strong>: 6個のピルを「1本のL字ルーラーレール」に統合整理。</li>
+          <li><strong>転置フロー</strong>: L字レールの下端ノッチから右端ノッチへと外周を架橋。</li>
+          <li><strong>印象</strong>: ハイテク感、精密な軸変換（X軸・Y軸）の工学的な格好良さ。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION C -->
+    <div class="concept-card">
+      <span class="badge badge-c">案 C • フラット・ソリッドバー型</span>
+      <div class="title">Sleek Floating Tabs</div>
+      <div class="desc">ヘッダーピルの骨格を残しつつ、内部の二重線・枠線を全廃してフラットな半透明バーに簡素化。シアンバーに矢印が直接ドッキングするスマートデザイン。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v5_optC_cleantabs_512.png" alt="Option C Clean Tabs">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optC_cleantabs_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optC_cleantabs_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v5_optC_cleantabs_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>抽象化手法</strong>: ピル内部の細かな要素を削ぎ落とし、ミニマルなバーに昇華。</li>
+          <li><strong>転置フロー</strong>: 左下のシアンバーから発進し、右上のシアンバーへ直接吸着。</li>
+          <li><strong>印象</strong>: 前回のレイアウトの良さを残しつつ、情報量を50%カット。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

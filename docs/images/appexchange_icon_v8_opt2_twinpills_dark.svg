@@ -1,0 +1,52 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_p2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="40%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="arc_p2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="60%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="pill_cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="pill_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow_gold_p2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#F59E0B" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow_cyan_p2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0284C7" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glow_arc_p2" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#06B6D4" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg_p2)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#818CF8" stroke-opacity="0.25" stroke-width="4"/>
+
+  <!-- TWO VERTICAL CAPSULES (Pure color, no text, stadium pill shape) -->
+  <!-- LEFT PILL: Electric Cyan -->
+  <g filter="url(#glow_cyan_p2)">
+    <rect x="180" y="224" width="108" height="132" rx="54" fill="url(#pill_cyan)" stroke="#BAE6FD" stroke-width="3"/>
+  </g>
+
+  <!-- RIGHT PILL: Amber Gold -->
+  <g filter="url(#glow_gold_p2)">
+    <rect x="314" y="224" width="108" height="132" rx="54" fill="url(#pill_gold)" stroke="#FEF08A" stroke-width="3"/>
+  </g>
+
+  <!-- EXTRA BOLD GENTLE SWEEPING ARC ARROW (Stroke 40px) -->
+  <g filter="url(#glow_arc_p2)">
+    <path d="M 70 420 C 110 200, 220 95, 395 95" fill="none" stroke="url(#arc_p2)" stroke-width="40" stroke-linecap="round"/>
+    <path d="M 70 420 C 110 200, 220 95, 395 95" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 16"/>
+    <polygon points="440,95 385,62 396,128" fill="#FFFFFF" stroke="#06B6D4" stroke-width="3.5" stroke-linejoin="round"/>
+  </g>
+</svg>

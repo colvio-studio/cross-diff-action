@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - ヘッダー転置アプリアイコン決定版 (v4)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 900px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 760px;
+      margin: 0 auto 16px;
+    }
+    .badge-bar {
+      display: inline-flex;
+      gap: 12px;
+      background: #1E293B;
+      border: 1px solid #334155;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #38BDF8;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .preview-large {
+      width: 320px;
+      height: 320px;
+      margin-bottom: 32px;
+      filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      border-radius: 70px;
+    }
+    .sizes-box {
+      width: 100%;
+      background: #0B0F19;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-sizing: border-box;
+      margin-bottom: 28px;
+    }
+    .sizes-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--subtext);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 28px;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .size-item span {
+      font-size: 12px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 22%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .features-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      font-size: 14px;
+      color: #CBD5E1;
+    }
+    .feature-card {
+      background: #111827;
+      border: 1px solid #1F2937;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .feature-card strong {
+      display: block;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — ヘッダー転置アプリアイコン (v4)</h1>
+    <p>「最下段の行ヘッダ」から「最右列の列ヘッダ」へとダイナミックに弧を描くアーク矢印、および2行目に配置されたアンバー差分セル（≠）の決定版デザインです。</p>
+    <div class="badge-bar">
+      <span>✓ 行ヘッダ ➔ 列ヘッダ転置フロー</span>
+      <span>✓ 2行目 差分ハイライト (≠)</span>
+      <span>✓ 案 1-A-2 発光シアン矢印</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="preview-large">
+      <img src="appexchange_icon_v4_header_transpose_512.png" alt="CrossDiffAction App Icon v4">
+    </div>
+
+    <div class="sizes-box">
+      <div class="sizes-title">Salesforce 各 UI 表示サイズでの視認性検証</div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v4_128.png" width="96" height="96">
+          <span>128px (AppExchange)</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v4_64.png" width="64" height="64">
+          <span>64px (Large Tile)</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v4_44.png" width="44" height="44">
+          <span>44px (App Launcher)</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v4_32.png" width="32" height="32">
+          <span>32px (Header / Nav)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-list">
+      <div class="feature-card">
+        <strong>1. ヘッダー間の転置ダイナミズム</strong>
+        データセルではなく、最下段の「行ヘッダ」から最右列の「列ヘッダ」へとアーク矢印を架橋することで、「行（横）を列（縦）に転置する」という本アプリのコア価値を直感的に表現。
+      </div>
+      <div class="feature-card">
+        <strong>2. 2行目・中央への差分セル移動</strong>
+        差分セル（ゴールド ＋ 不等号「≠」）を右列の2行目に配置したことで、矢印ヘッドの着地位置と完全に干渉が解消され、中央右側への視線誘導が自然になりました。
+      </div>
+      <div class="feature-card">
+        <strong>3. シアン発光グラデーション＆白破線コア</strong>
+        案 1-A-2 スタイルの Electric Cyan 発光チューブと内部のホワイトダッシュラインにより、未来感とデータの流れ（データパイプライン）を美しく演出。
+      </div>
+      <div class="feature-card">
+        <strong>4. Colvio Studio ブランド完全合致</strong>
+        背景の Royal Indigo、アークの Electric Cyan、差分セルの Gold/Amber により、コーポレートアイデンティティと 100% 整合しています。
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

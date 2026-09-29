@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - AppExchange アプリアイコン新3案 (案1ベース改訂版)</title>
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #0F172A;
+      --subtext: #475569;
+      --border: #E2E8F0;
+      --indigo: #4F46E5;
+      --cyan: #06B6D4;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1200px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #0F172A;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .brand-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+      padding: 8px 18px;
+      background: #EEF2FF;
+      border: 1px solid #C7D2FE;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3730A3;
+    }
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-opt1a { background: #EEF2FF; color: #4338CA; border: 1px solid #C7D2FE; }
+    .badge-opt1b { background: #0F172A; color: #38BDF8; border: 1px solid #334155; }
+    .badge-opt1c { background: #F0FDF4; color: #047857; border: 1px solid #BBF7D0; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 20px rgba(0,0,0,0.15));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #F8FAFC;
+      border-radius: 14px;
+      border: 1px solid #E2E8F0;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748B;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #334155;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — AppExchange アイコン 改訂3案 (案1ベース)</h1>
+    <p>ユーザー様のご要望に沿い、<strong>「左下から右上へ、上に弧（アーチ）を描く矢印」</strong>および<strong>「Colvio Studio ブランドカラー（Royal Indigo / Electric Cyan / Amber）」</strong>に完全合致させた 3 バリエーションです。</p>
+    <div class="brand-note">
+      <span class="brand-dot" style="background: #4F46E5;"></span> Colvio Indigo (#4F46E5)
+      <span class="brand-dot" style="background: #06B6D4;"></span> Electric Cyan (#06B6D4)
+      <span class="brand-dot" style="background: #F59E0B;"></span> Diff Amber (#F59E0B)
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1-A -->
+    <div class="concept-card">
+      <span class="badge badge-opt1a">案 1-A • Colvio Signature</span>
+      <div class="title">Royal Indigo & Cyan Glow</div>
+      <div class="desc">Colvio Studio のシグネチャーである深みのあるインディゴグラデーション背景に、発光するエレクトリック・シアンの上弦アーク矢印とゴールドの不一致セル（≠）を配置。</div>
+      <div class="preview-large">
+        <img src="appexchange_app_icon_v2_opt1a_royal_indigo_512.png" alt="Option 1-A Royal Indigo">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1a_royal_indigo_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1a_royal_indigo_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1a_royal_indigo_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>矢印</strong>: 左下から右上に伸びる優雅な上弦アーク矢印（内側ダッシュライン付き）</li>
+          <li><strong>色彩</strong>: Colvio Deep Indigo ＋ Electric Cyan Glow ＋ Diff Amber</li>
+          <li><strong>印象</strong>: 洗練されたブランド統一感、先進的エンタープライズツール</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 1-B -->
+    <div class="concept-card">
+      <span class="badge badge-opt1b">案 1-B • High Contrast</span>
+      <div class="title">Tech Contrast / Dark Slate</div>
+      <div class="desc">ダークスレート背景を採用し、シアン〜インディゴのデュアルグラデーション矢印と警告アラート（⚠）セルを最大コントラストで際立たせたプロフェッショナルデザイン。</div>
+      <div class="preview-large">
+        <img src="appexchange_app_icon_v2_opt1b_tech_contrast_512.png" alt="Option 1-B Tech Contrast">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1b_tech_contrast_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1b_tech_contrast_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1b_tech_contrast_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>矢印</strong>: ソリッド＆ホワイト縁取りの強力な上昇アーク矢印</li>
+          <li><strong>色彩</strong>: Dark Slate ＋ Electric Cyan ＋ Alert Triangle（差分警告）</li>
+          <li><strong>印象</strong>: 高い視認性、開発者・管理者向けの高信頼・高精度ツール感</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 1-C -->
+    <div class="concept-card">
+      <span class="badge badge-opt1c">案 1-C • Clean & Native</span>
+      <div class="title">Modern Frost / Light Theme</div>
+      <div class="desc">ホワイト〜ペールインディゴの清潔感ある背景に、Colvio Indigoのセンター基底セルと鮮やかなシアンアーク矢印。Salesforce標準UIに最も自然に溶け込むライトスタイル。</div>
+      <div class="preview-large">
+        <img src="appexchange_app_icon_v2_opt1c_modern_frost_512.png" alt="Option 1-C Modern Frost">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1c_modern_frost_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1c_modern_frost_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_app_icon_v2_opt1c_modern_frost_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>矢印</strong>: IndigoからCyanへグラデーションする滑らかな上向きアーク</li>
+          <li><strong>色彩</strong>: Frost White ＋ Colvio Indigo ＋ Electric Cyan ＋ Diff Gold</li>
+          <li><strong>印象</strong>: 親しみやすさ、直感的な操作性、Salesforce Lightning UIとの完全親和</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

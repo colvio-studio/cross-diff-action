@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 矢羽根ヘッドデザイン 3案比較 (v10)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-rec { background: #065F46; color: #34D399; border: 1px solid #059669; }
+    .badge-sub { background: #082F49; color: #38BDF8; border: 1px solid #0369A1; }
+    .badge-tri { background: #312E81; color: #A5B4FC; border: 1px solid #4338CA; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 矢羽根（Fletched）アローヘッド 3案 (v10)</h1>
+    <p>野暮ったい三角ヘッドを廃止し、<strong>「両端に矢羽根（ウイング）が広がる空力学的なヘッド形状」</strong>へと刷新した 3 バリエーションです。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1 -->
+    <div class="concept-card">
+      <span class="badge badge-rec">矢羽根案 1 • ステルス・矢羽根ウイング 【一押し推奨】</span>
+      <div class="title">Stealth Wing Fletching</div>
+      <div class="desc">矢頭の後ろが美しくくびれ、両翼（上下）に鋭い矢羽根が後退するツバメ尾形状。胴体の白コアラインが矢頭の中央へ自然に溶け込み、圧倒的なスピード感を演出。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v10_opt1_stealth_wings_512.png" alt="Stealth Wing Fletching">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt1_stealth_wings_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt1_stealth_wings_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt1_stealth_wings_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 両端に矢羽根（後退ウイング）が広がるスワローテイル・ヘッド。</li>
+          <li><strong>利点</strong>: 「三角形を貼り付けた感」が完全に消滅し、胴体と一体化。</li>
+          <li><strong>印象</strong>: 最新鋭の戦闘機やハイテク・アーチェリーのような極上のシャープネス。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div class="concept-card">
+      <span class="badge badge-sub">矢羽根案 2 • 2連矢羽根シェブロン</span>
+      <div class="title">Double Chevron Fletching</div>
+      <div class="desc">前後に並ぶ2連のV字矢羽根（シェブロン）が推進力を生み出す加速デザイン。先端に向かって重なる2つの矢羽根が、前方への力強い推力を強調。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v10_opt2_double_chevron_512.png" alt="Double Chevron Fletching">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt2_double_chevron_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt2_double_chevron_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt2_double_chevron_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 2つの矢羽根が重なり合う複層シェブロン。</li>
+          <li><strong>利点</strong>: 「高速」「トランスポーズ（転置）」のアクションが直感的に伝わる。</li>
+          <li><strong>印象</strong>: 先進的なテックアイコン、デジタルUIらしさ。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 3 -->
+    <div class="concept-card">
+      <span class="badge badge-tri">矢羽根案 3 • エアロ・ノッチフェザー</span>
+      <div class="title">Aero Notch Fletching</div>
+      <div class="desc">矢頭の中央にスリット（ノッチ）を刻み、白レーザーラインが先端まで貫通する構造。矢頭の根元に矢羽根フィンが張り出し、知的な航空宇宙感を表現。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v10_opt3_aero_notch_512.png" alt="Aero Notch Fletching">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt3_aero_notch_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt3_aero_notch_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v10_opt3_aero_notch_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 中央ノッチスリット ＋ 左右フレア矢羽根フィン。</li>
+          <li><strong>利点</strong>: 胴体中央の白ラインが矢頭の先端まで途切れず貫通。</li>
+          <li><strong>印象</strong>: CADや精密測定機器のような、工学的でハイプレシジョンな世界観。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background: Clean Light Ice/Indigo Gradient -->
+    <linearGradient id="bg_v9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+
+    <!-- Transpose Arc: Electric Indigo to Vibrant Cyan Gradient -->
+    <linearGradient id="arc_v9_1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="40%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Royal Indigo Circle Gradient -->
+    <linearGradient id="circle_blue_v9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+
+    <!-- Gold Circle Gradient -->
+    <linearGradient id="circle_gold_v9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadow_circles_v9" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312E81" flood-opacity="0.22"/>
+    </filter>
+    <filter id="gold_glow_v9" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#F59E0B" flood-opacity="0.45"/>
+    </filter>
+    <filter id="arc_shadow_v9_1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0284C7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bg_v9)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#C7D2FE" stroke-width="4"/>
+
+  <!-- TWO PURE CIRCLES (Shifted lower to cy = 325 for spacious golden ratio) -->
+  <!-- LEFT CIRCLE: Royal Indigo -->
+  <g filter="url(#shadow_circles_v9)">
+    <circle cx="236" cy="325" r="62" fill="url(#circle_blue_v9)"/>
+    <circle cx="236" cy="325" r="60.5" fill="none" stroke="#818CF8" stroke-width="3"/>
+  </g>
+
+  <!-- RIGHT CIRCLE: Vibrant Gold / Amber -->
+  <g filter="url(#gold_glow_v9)">
+    <circle cx="368" cy="325" r="62" fill="url(#circle_gold_v9)"/>
+    <circle cx="368" cy="325" r="60.5" fill="none" stroke="#FEF08A" stroke-width="3"/>
+  </g>
+
+  <!-- ARROW PATTERN 1: SLEEK SOLID GRADIENT RIBBON (No dashes, perfectly integrated solid arrowhead) -->
+  <g filter="url(#arc_shadow_v9_1)">
+    <!-- Main Smooth Arc Path -->
+    <path d="M 68 410 C 110 190, 220 92, 385 92" fill="none" stroke="url(#arc_v9_1)" stroke-width="36" stroke-linecap="round"/>
+    <!-- Integrated Solid Arrowhead matching gradient end tone -->
+    <polygon points="440,92 380,56 390,128" fill="#0284C7" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+  </g>
+</svg>

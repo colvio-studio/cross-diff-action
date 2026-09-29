@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 極限抽象化 3案比較 (v6)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-1 { background: #312E81; color: #A5B4FC; border: 1px solid #4338CA; }
+    .badge-2 { background: #082F49; color: #38BDF8; border: 1px solid #0369A1; }
+    .badge-3 { background: #451A03; color: #FBBF24; border: 1px solid #78350F; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 極限抽象化 3案 (v6)</h1>
+    <p>内側の枠を撤廃し、<strong>「極太アーク矢印」✕「横並び2つの項目（右側イエロー）」</strong>に純化した超ミニマル・シンボリックデザインです。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1 -->
+    <div class="concept-card">
+      <span class="badge badge-1">案 1 • デュオ・カード型</span>
+      <div class="title">Bold Duo Cards</div>
+      <div class="desc">縦長の2枚のスマートカード（左：インディゴのレコード、右：イエローの差分カード「≠」）。その背後から右肩上がりに抜ける極太のシアン発光アーク。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v6_opt1_duocards_512.png" alt="Option 1 Duo Cards">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt1_duocards_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt1_duocards_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt1_duocards_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 横並びの2枚の角丸カード（データシート）。</li>
+          <li><strong>矢印</strong>: 線幅26pxの極太アーク（シアン発光＋ホワイト破線）。</li>
+          <li><strong>印象</strong>: 「2つのレコードの比較と転置」が最も直感的に伝わる王道スタイル。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div class="concept-card">
+      <span class="badge badge-2">案 2 • ツイン・カプセル型</span>
+      <div class="title">Twin Pill Capsules</div>
+      <div class="desc">横長のカプセルピル形状（左：ベース値、右：イエローの差分「≠」）。ホワイト縁取りのソリッドな極太スウィープ矢印が力強く疾走するモダンデザイン。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v6_opt2_twinpills_512.png" alt="Option 2 Twin Pills">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt2_twinpills_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt2_twinpills_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt2_twinpills_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 横並びの2つのカプセルピル（角丸長円）。</li>
+          <li><strong>矢印</strong>: 線幅28pxのソリッド・シアンストローク（白縁取り）。</li>
+          <li><strong>印象</strong>: フィンテックのようなスピード感と親しみやすさ、高い視認性。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 3 -->
+    <div class="concept-card">
+      <span class="badge badge-3">案 3 • 幾何学シンボリック型 【推奨】</span>
+      <div class="title">Pure Geometric Blocks</div>
+      <div class="desc">2つの正方形ブロックに「＝（一致/基準）」と「≠（差異/黄色）」を刻み、極太28pxのアーク矢印が昇華させる、極限のシンボルデザイン。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v6_opt3_puregeom_512.png" alt="Option 3 Pure Geometric">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt3_puregeom_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt3_puregeom_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v6_opt3_puregeom_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>形状</strong>: 2つの正方形ブロック（「＝」対「≠」）。</li>
+          <li><strong>矢印</strong>: 線幅28pxのダイナミック・アーク（破線コア入り）。</li>
+          <li><strong>印象</strong>: 純粋な幾何学美。16px〜32pxでも完璧に視認可能なロゴアイコン。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

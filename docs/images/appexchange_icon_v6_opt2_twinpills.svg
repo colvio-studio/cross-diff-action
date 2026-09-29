@@ -1,0 +1,58 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_u2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="40%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="arc_u2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="diff_gold_u2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow_diff_u2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#F59E0B" flood-opacity="0.7"/>
+    </filter>
+    <filter id="glow_arc_u2" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#06B6D4" flood-opacity="0.7"/>
+    </filter>
+    <filter id="pill_shadow_u2" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#0F0E26" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg_u2)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#818CF8" stroke-opacity="0.25" stroke-width="4"/>
+
+  <!-- TWO HORIZONTAL PILLS (Capsules) -->
+  <g transform="translate(170, 200)" filter="url(#pill_shadow_u2)">
+    <!-- LEFT PILL: Base Record Capsule -->
+    <rect x="0" y="0" width="128" height="76" rx="38" fill="#1E1B4B" fill-opacity="0.8" stroke="#6366F1" stroke-width="3"/>
+    <rect x="30" y="32" width="68" height="12" rx="6" fill="#C7D2FE"/>
+
+    <!-- RIGHT PILL: Target Diff Capsule (Yellow Gold) -->
+    <g transform="translate(148, 0)" filter="url(#glow_diff_u2)">
+      <rect x="0" y="0" width="128" height="76" rx="38" fill="url(#diff_gold_u2)" stroke="#FEF08A" stroke-width="3.5"/>
+      <!-- Discrepancy Glyph '≠' -->
+      <g stroke="#78350F" stroke-width="6" stroke-linecap="round">
+        <line x1="42" y1="31" x2="86" y2="31"/>
+        <line x1="42" y1="45" x2="86" y2="45"/>
+        <line x1="76" y1="21" x2="52" y2="55"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- SOLID BOLD SWEEPING ARROW (Stroke width 28px!) -->
+  <g filter="url(#glow_arc_u2)">
+    <!-- White Backing Stroke for crisp contrast -->
+    <path d="M 80 425 C 80 150, 180 80, 375 80" fill="none" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+    <!-- Cyan Glowing Core -->
+    <path d="M 80 425 C 80 150, 180 80, 375 80" fill="none" stroke="url(#arc_u2)" stroke-width="26" stroke-linecap="round"/>
+    <!-- Bold Sharp Arrowhead -->
+    <polygon points="418,80 370,54 380,106" fill="#38BDF8" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+</svg>

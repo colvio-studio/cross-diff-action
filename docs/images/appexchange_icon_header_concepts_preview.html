@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 行ヘッダ・列ヘッダ表現 3案比較 (案1-Aベース)</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #334155;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-opt1 { background: #312E81; color: #A5B4FC; border: 1px solid #4338CA; }
+    .badge-opt2 { background: #082F49; color: #38BDF8; border: 1px solid #0369A1; }
+    .badge-opt3 { background: #451A03; color: #FBBF24; border: 1px solid #78350F; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.5));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0F172A;
+      border-radius: 14px;
+      border: 1px solid #334155;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 行ヘッダ・列ヘッダ表現 3案 (案1-Aベース)</h1>
+    <p>外枠と内側マトリクスボードの隙間を活用し、<strong>「行ヘッダ」と「列ヘッダ」の存在を直感的にわかりやすく表現</strong>した 3 つのデザインアプローチです。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1-A-1 -->
+    <div class="concept-card">
+      <span class="badge badge-opt1">案 1-A-1 • 抽象ピルチップ型</span>
+      <div class="title">Header Pill Chips</div>
+      <div class="desc">外枠と内枠の隙間に、各列（3つ）と各行（3つ）に対応する独立した丸角ピルチップを配置。文字を使わず抽象UIラベルとしてクリーンに表現。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v3_opt1a1_pills_512.png" alt="Option 1-A-1 Header Pills">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a1_pills_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a1_pills_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a1_pills_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>表現</strong>: 列上部と行左部に独立したピル（バー）。</li>
+          <li><strong>利点</strong>: 言語非依存で極小サイズでも潰れず、UIリズム感が美しい。</li>
+          <li><strong>連動</strong>: 左下行チップと右上列チップがシアン発光し、転置フローと呼応。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 1-A-2 -->
+    <div class="concept-card">
+      <span class="badge badge-opt2">案 1-A-2 • 軸ルーラーレール型</span>
+      <div class="title">Axis Ruler Rails</div>
+      <div class="desc">上辺（X軸：列）と左辺（Y軸：行）に連続した一体型ルーラーレールを敷き、角に原点ドット、各位置に目盛スロットを組み込んだ精密デザイン。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v3_opt1a2_rails_512.png" alt="Option 1-A-2 Axis Rails">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a2_rails_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a2_rails_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a2_rails_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>表現</strong>: X軸・Y軸の繋がったレール＋目盛スライダー。</li>
+          <li><strong>利点</strong>: 「縦軸（行）と横軸（列）を変換する精密ツール」というハイテク感。</li>
+          <li><strong>連動</strong>: Y軸下端の目盛からX軸右端の目盛へアークが架橋。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 1-A-3 -->
+    <div class="concept-card">
+      <span class="badge badge-opt3">案 1-A-3 • 英数インデックス型</span>
+      <div class="title">Spreadsheet "A B C / 1 2 3"</div>
+      <div class="desc">スプレッドシートでおなじみの列「A B C」と行「1 2 3」のヘッダープレートを隙間に配置。「表・マトリクス」であることが一瞬で誰にでも伝わる決定版。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v3_opt1a3_abc123_512.png" alt="Option 1-A-3 ABC 123">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a3_abc123_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a3_abc123_128.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v3_opt1a3_abc123_128.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>表現</strong>: 列上部に「A B C」、行左部に「1 2 3」を配置。</li>
+          <li><strong>利点</strong>: 誰もが知るスプレッドシート記法により、0.1秒で表と理解可能。</li>
+          <li><strong>連動</strong>: 「行3」から「列C」への転置（Row 3 → Col C）が論理的にも明確。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

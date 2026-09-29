@@ -1,76 +1,65 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Premium Dark Slate Navy Background -->
-  <rect width="512" height="512" rx="112" fill="url(#bg_grad_512)"/>
-  
-  <!-- Subtle inner border for premium enterprise depth -->
-  <rect x="2" y="2" width="508" height="508" rx="110" stroke="white" stroke-opacity="0.15" stroke-width="4"/>
+  <defs>
+    <!-- Background Gradient: Clean Light Ice -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
 
-  <!-- Ambient Glow Behind Central Emblem -->
-  <circle cx="256" cy="256" r="180" fill="url(#glow_grad_512)" opacity="0.7"/>
+    <!-- Transpose Arc Gradient: Electric Cyan & Indigo -->
+    <linearGradient id="arc" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="45%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
 
-  <!-- CrossDiff Symbolic Matrix & Transpose Comparator -->
-  <g transform="translate(80, 80)">
-    <!-- Matrix Grid Base Card with Drop Shadow -->
-    <rect x="16" y="32" width="320" height="288" rx="36" fill="#0F172A" fill-opacity="0.9" stroke="#334155" stroke-width="6"/>
+    <!-- Circle 1: Royal Indigo -->
+    <linearGradient id="circle_blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
 
-    <!-- Left Header Column (Field Labels) -->
-    <rect x="32" y="52" width="88" height="64" rx="14" fill="#1E293B"/>
-    <rect x="32" y="136" width="88" height="64" rx="14" fill="#1E293B"/>
-    <rect x="32" y="220" width="88" height="64" rx="14" fill="#1E293B"/>
-    <line x1="46" y1="84" x2="88" y2="84" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
-    <line x1="46" y1="168" x2="96" y2="168" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
-    <line x1="46" y1="252" x2="80" y2="252" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Circle 2: Amber Gold (Diff Detected) -->
+    <linearGradient id="circle_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
 
-    <!-- Column 1: Record A (Base Record) -->
-    <rect x="136" y="52" width="92" height="64" rx="14" fill="#1E1B4B" stroke="#4F46E5" stroke-width="3"/>
-    <rect x="136" y="136" width="92" height="64" rx="14" fill="#1E1B4B" stroke="#4F46E5" stroke-width="3"/>
-    <rect x="136" y="220" width="92" height="64" rx="14" fill="#1E1B4B" stroke="#4F46E5" stroke-width="3"/>
-    <line x1="154" y1="84" x2="206" y2="84" stroke="#818CF8" stroke-width="6" stroke-linecap="round"/>
-    <line x1="154" y1="168" x2="206" y2="168" stroke="#818CF8" stroke-width="6" stroke-linecap="round"/>
-    <line x1="154" y1="252" x2="206" y2="252" stroke="#818CF8" stroke-width="6" stroke-linecap="round"/>
+    <!-- Drop Shadows -->
+    <filter id="shadow_circles" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312E81" flood-opacity="0.22"/>
+    </filter>
+    <filter id="gold_glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#F59E0B" flood-opacity="0.45"/>
+    </filter>
+    <filter id="arc_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0284C7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
 
-    <!-- Column 2: Record B (Target Record with Diff) -->
-    <!-- Row 1: Equal -->
-    <rect x="244" y="52" width="92" height="64" rx="14" fill="#1E1B4B" stroke="#4338CA" stroke-width="3"/>
-    <line x1="262" y1="84" x2="314" y2="84" stroke="#818CF8" stroke-width="6" stroke-linecap="round"/>
+  <!-- Squircle Canvas & Border -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#C7D2FE" stroke-width="4"/>
 
-    <!-- Row 2: DIFF SPOTLIGHT (Amber Highlight - The Signature CrossDiff Badge) -->
-    <rect x="244" y="136" width="92" height="64" rx="14" fill="#78350F" stroke="#F59E0B" stroke-width="5"/>
-    <circle cx="268" cy="168" r="9" fill="#FBBF24"/>
-    <line x1="288" y1="168" x2="318" y2="168" stroke="#FDE68A" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="289" cy="168" r="4" fill="#FFFFFF"/>
-
-    <!-- Row 3: Equal -->
-    <rect x="244" y="220" width="92" height="64" rx="14" fill="#1E1B4B" stroke="#4338CA" stroke-width="3"/>
-    <line x1="262" y1="252" x2="314" y2="252" stroke="#818CF8" stroke-width="6" stroke-linecap="round"/>
-
-    <!-- Dynamic Transpose Arc (Vivid Cyan Vector) -->
-    <path d="M 48 24 C 48 4 304 4 304 24" stroke="url(#cyan_grad_512)" stroke-width="8" stroke-linecap="round"/>
-    <path d="M 288 12 L 308 24 L 288 36" fill="none" stroke="#38BDF8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- Colvio Frictionless Dot -->
-    <circle cx="316" cy="168" r="5" fill="#38BDF8"/>
+  <!-- TWO PURE DATA CIRCLES (Aligned baseline at y=387) -->
+  <g filter="url(#shadow_circles)">
+    <circle cx="236" cy="325" r="62" fill="url(#circle_blue)"/>
+    <circle cx="236" cy="325" r="60.5" fill="none" stroke="#818CF8" stroke-width="3"/>
+  </g>
+  <g filter="url(#gold_glow)">
+    <circle cx="368" cy="325" r="62" fill="url(#circle_gold)"/>
+    <circle cx="368" cy="325" r="60.5" fill="none" stroke="#FEF08A" stroke-width="3"/>
   </g>
 
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg_grad_512" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0A0F1D"/>
-      <stop offset="0.45" stop-color="#0F172A"/>
-      <stop offset="1" stop-color="#1E1B4B"/>
-    </linearGradient>
-
-    <!-- Glow Gradient -->
-    <radialGradient id="glow_grad_512" cx="256" cy="256" r="180" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4F46E5" stop-opacity="0.45"/>
-      <stop offset="0.65" stop-color="#06B6D4" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="#0A0F1D" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Cyan Arc Gradient -->
-    <linearGradient id="cyan_grad_512" x1="48" y1="24" x2="304" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#06B6D4"/>
-      <stop offset="1" stop-color="#38BDF8"/>
-    </linearGradient>
-  </defs>
+  <!-- TRANSPOSE ARC & STEALTH WING FLETCHED HEAD (Vertical alignment at x=430) -->
+  <g filter="url(#arc_shadow)">
+    <!-- Base Gradient Body (38px wide) -->
+    <path d="M 76 375 C 116 185, 220 92, 366 92" fill="none" stroke="url(#arc)" stroke-width="38" stroke-linecap="round"/>
+    <!-- Solid Crisp White Core Line -->
+    <path d="M 80 375 C 118 190, 220 92, 382 92" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <!-- Swept Wing Fletched Arrow Head -->
+    <path d="M 430 92 L 366 50 L 384 92 L 366 134 Z" fill="#0284C7" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 422 92 L 378 64 L 392 92 L 378 120 Z" fill="#38BDF8" fill-opacity="0.6"/>
+  </g>
 </svg>

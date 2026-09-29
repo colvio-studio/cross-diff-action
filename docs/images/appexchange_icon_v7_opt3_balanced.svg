@@ -1,0 +1,57 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_u3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="40%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="arc_u3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="60%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="diff_gold_u3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow_diff_u3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#F59E0B" flood-opacity="0.75"/>
+    </filter>
+    <filter id="glow_arc_u3" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#06B6D4" flood-opacity="0.75"/>
+    </filter>
+    <filter id="block_shadow_u3" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#0F0E26" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg_u3)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#818CF8" stroke-opacity="0.25" stroke-width="4"/>
+
+  <!-- TWO HORIZONTAL GEOMETRIC BLOCKS -->
+  <g transform="translate(190, 235)" filter="url(#block_shadow_u3)">
+    <!-- LEFT BLOCK: Base Square (Match '=') -->
+    <rect x="0" y="0" width="112" height="112" rx="28" fill="#1E1B4B" fill-opacity="0.8" stroke="#6366F1" stroke-width="3"/>
+    <g stroke="#A5B4FC" stroke-width="6.5" stroke-linecap="round">
+      <line x1="36" y1="46" x2="76" y2="46"/>
+      <line x1="36" y1="66" x2="76" y2="66"/>
+    </g>
+
+    <!-- RIGHT BLOCK: Yellow Diff Square (Discrepancy '≠') -->
+    <g transform="translate(132, 0)" filter="url(#glow_diff_u3)">
+      <rect x="0" y="0" width="112" height="112" rx="28" fill="url(#diff_gold_u3)" stroke="#FEF08A" stroke-width="3.5"/>
+      <g stroke="#78350F" stroke-width="6.5" stroke-linecap="round">
+        <line x1="31" y1="46" x2="81" y2="46"/>
+        <line x1="31" y1="66" x2="81" y2="66"/>
+        <line x1="69" y1="27" x2="43" y2="85"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ULTRA-BOLD TRANSPOSE ARCH ARROW -->
+  <g filter="url(#glow_arc_u3)">
+    <path d="M 80 420 C 80 140, 190 75, 380 75" fill="none" stroke="url(#arc_u3)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M 80 420 C 80 140, 190 75, 380 75" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 14"/>
+    <polygon points="422,75 374,50 384,100" fill="#FFFFFF" stroke="#06B6D4" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 片側矢頭 vs 両端矢頭 徹底比較 (v11)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1100px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-rec { background: #065F46; color: #34D399; border: 1px solid #059669; }
+    .badge-sub { background: #1E293B; color: #94A3B8; border: 1px solid #475569; }
+
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 14px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 48px;
+    }
+    .preview-large {
+      width: 280px;
+      height: 280px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 14px 28px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 60px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      padding: 18px 28px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 24px;
+      width: 100%;
+      font-size: 13.5px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .features li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 片側矢頭 vs 両端矢頭 比較検証 (v11)</h1>
+    <p>「矢羽根案 1（ステルスウイング）」をベースに、<strong>片側（現行の右上単方向）と両端（双方向アロー）のどちらがアプリアイコンとして優れているか</strong>の比較検証です。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1: SINGLE HEAD -->
+    <div class="concept-card">
+      <span class="badge badge-rec">デザイナー推奨 • 片側矢頭 (単方向)</span>
+      <div class="title">Single Stealth Head</div>
+      <div class="desc">左下の丸みを帯びた始点から、右上へと一本気配に駆け上がるダイナミックなアーク。視線誘導が自然で、右肩上がりの前進感。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v11_single_head_512.png" alt="Single Head">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v11_single_head_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v11_single_head_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v11_single_head_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>右肩上がりの前進感</strong>: 左下から右上へスムーズに視線が抜け、成長・効率化のストーリーが明快。</li>
+          <li><strong>幾何学的調和</strong>: 左下のラウンドキャップが青い丸と美しくエコーし、まとまりが完璧。</li>
+          <li><strong>極小視認性</strong>: 32px でも左下のラインが滑らかで、一切のノイズなし。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 2: DUAL HEADS -->
+    <div class="concept-card">
+      <span class="badge badge-sub">検討案 • 両端矢頭 (双方向)</span>
+      <div class="title">Dual Stealth Heads</div>
+      <div class="desc">右上と左下の両端に矢羽根ヘッドを配置。行と列を相互に転置・往復変換するという機能的意味合いをダイレクトに表現。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v11_dual_heads_512.png" alt="Dual Heads">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v11_dual_heads_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v11_dual_heads_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v11_dual_heads_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>双方向の転置概念</strong>: 「A ⇄ B」「行 ⇄ 列」の相互変換という意味合いが伝わる。</li>
+          <li><strong>視線の往復</strong>: 視線が両方向に引っ張り合い、下向きの矢印によりやや「下降感」が生じる。</li>
+          <li><strong>極小視認性</strong>: 32px だと左下の角に要素が密集し、やや引っ掛かりが出る。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

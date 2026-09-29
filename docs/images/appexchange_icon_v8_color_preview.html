@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 超抽象化＆カラーシンボル 3案 (v8)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-light { background: #EEF2FF; color: #4338CA; border: 1px solid #C7D2FE; }
+    .badge-dark { background: #082F49; color: #38BDF8; border: 1px solid #0369A1; }
+    .badge-slate { background: #1E293B; color: #FBBF24; border: 1px solid #475569; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 超抽象化＆カラーシンボル 3案 (v8)</h1>
+    <p>文字を削ぎ落とした<strong>「純粋な青と黄色のカラー対比」</strong>、<strong>「超極太（40px）＆緩やかなアーク矢印」</strong>による決定版シンボルデザインです。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1 -->
+    <div class="concept-card">
+      <span class="badge badge-light">案 1 • ツインサークル ✕ ライトアイス背景 【一押し推奨】</span>
+      <div class="title">Twin Circles (Ice Frost)</div>
+      <div class="desc">清潔なホワイト〜ペールインディゴ背景に、深いロイヤルインディゴと鮮烈なゴールドの真円。超極太40pxのシアンアークが滑らかに右肩上がりに抜ける究極の純粋美。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v8_opt1_twincircles_light_512.png" alt="Twin Circles Light">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt1_twincircles_light_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt1_twincircles_light_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt1_twincircles_light_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>Shape</strong>: 2つの完全な円（サークル）。</li>
+          <li><strong>カラー</strong>: 薄い背景だからこそ映える、純粋な青と黄色の対比。</li>
+          <li><strong>印象</strong>: Mastercard や Figma のような歴史に残る世界基準の美しさ。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div class="concept-card">
+      <span class="badge badge-dark">案 2 • 縦長カプセル ✕ 深海インディゴ背景</span>
+      <div class="title">Twin Vertical Pills (Deep Indigo)</div>
+      <div class="desc">Colvioの深海インディゴ背景に、Electric Cyan（発光水色）とAmber Gold（発光黄色）の2つのカプセルピルがネオンのように輝くサイバースタイル。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v8_opt2_twinpills_dark_512.png" alt="Twin Pills Dark">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt2_twinpills_dark_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt2_twinpills_dark_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt2_twinpills_dark_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>Shape</strong>: 2つの丸角カプセルピル（スタジアム形状）。</li>
+          <li><strong>カラー</strong>: ダーク背景に浮き立つ発光シアンとアンバーゴールド。</li>
+          <li><strong>印象</strong>: 先進的・高機能・洗練されたプロフェッショナルツール感。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 3 -->
+    <div class="concept-card">
+      <span class="badge badge-slate">案 3 • スクワークル ✕ スレートブルー背景</span>
+      <div class="title">Twin Squircles (Slate Blue)</div>
+      <div class="desc">Apple等で愛される超楕円（スクワークル）形状に、ホワイト縁取りのソリッド極太アーク。スレートブルーの中間トーンで高級感を醸成。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v8_opt3_squircles_slate_512.png" alt="Squircles Slate">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt3_squircles_slate_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt3_squircles_slate_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v8_opt3_squircles_slate_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>Shape</strong>: 超楕円スクワークル（極めて滑らかな角丸四角）。</li>
+          <li><strong>カラー</strong>: スレートダークに映えるロイヤルインディゴとサンバーストゴールド。</li>
+          <li><strong>印象</strong>: オーガニックな柔らかさと力強いソリッド矢印の調和。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

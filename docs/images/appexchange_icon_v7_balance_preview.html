@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 案3 バランス調整プレビュー (v7)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .header {
+      max-width: 1240px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    .header p {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .grid {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      gap: 32px;
+    }
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .concept-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .badge-b { background: #312E81; color: #A5B4FC; border: 1px solid #4338CA; }
+    .badge-rec { background: #065F46; color: #34D399; border: 1px solid #059669; }
+    .badge-g { background: #451A03; color: #FBBF24; border: 1px solid #78350F; }
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .desc {
+      font-size: 13.5px;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 24px;
+      min-height: 54px;
+    }
+    .preview-large {
+      width: 256px;
+      height: 256px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.6));
+    }
+    .preview-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 56px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      padding: 16px 24px;
+      background: #0B0F19;
+      border-radius: 14px;
+      border: 1px solid #24324D;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .size-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #94A3B8;
+    }
+    .size-item img {
+      border-radius: 20%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .features {
+      margin-top: 20px;
+      width: 100%;
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .features ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>CrossDiffAction — 案3 下方シフト・バランス調整 3案 (v7)</h1>
+    <p>「＝」と「≠」の 2 つの四角ブロックを下方に移動させ、<strong>全体の上下重心とアーク矢印のスケール感を黄金比に整えた 3 バリエーション</strong>です。</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 7-A -->
+    <div class="concept-card">
+      <span class="badge badge-b">微調整 1 • センターバランス</span>
+      <div class="title">Balanced Center (50px 下げ)</div>
+      <div class="desc">ブロック（112px）を50px下げ、キャンバスの垂直中心（y=291）にスナップ。アーク矢印とブロック間の余白が美しく調和。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v7_opt3_balanced_512.png" alt="Balanced Center">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_balanced_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_balanced_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_balanced_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>位置</strong>: y = 235（50px シフト）。</li>
+          <li><strong>特徴</strong>: 上下の余白比率が整い、自然で落ち着いた佇まい。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 7-B -->
+    <div class="concept-card">
+      <span class="badge badge-rec">微調整 2 • ボールド＆クリア 【一押し推奨】</span>
+      <div class="title">Bold & Clear (拡大 122px ＋ 下方シフト)</div>
+      <div class="desc">ブロックを約9%拡大（122px）しつつ45px下げて配置。シンボルとしての視認性が最大化され、極小32pxでも「＝」と「≠」が鮮明に際立ちます。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v7_opt3_bold_clear_512.png" alt="Bold & Clear">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_bold_clear_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_bold_clear_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_bold_clear_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>位置・サイズ</strong>: 122px 拡大 ＋ y = 230（45px シフト）。</li>
+          <li><strong>特徴</strong>: 矢印の極太感とブロックの重量感が完全に釣り合い、最も力強い決定版。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 7-C -->
+    <div class="concept-card">
+      <span class="badge badge-g">微調整 3 • グラウンデッド</span>
+      <div class="title">Grounded Deep (65px 下げ)</div>
+      <div class="desc">ブロックをさらに深め（65px）に下げて配置。上部の矢印アークのダイナミックな跳躍感が最も強調されるレイアウト。</div>
+      <div class="preview-large">
+        <img src="appexchange_icon_v7_opt3_grounded_512.png" alt="Grounded Deep">
+      </div>
+      <div class="sizes-row">
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_grounded_128.png" width="64" height="64">
+          <span>64px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_grounded_44.png" width="44" height="44">
+          <span>44px</span>
+        </div>
+        <div class="size-item">
+          <img src="appexchange_icon_v7_opt3_grounded_32.png" width="32" height="32">
+          <span>32px</span>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li><strong>位置</strong>: y = 250（65px シフト）。</li>
+          <li><strong>特徴</strong>: アーク矢印が広々とした大空を駆けるような開放感。</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

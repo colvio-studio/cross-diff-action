@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossDiffAction - 丸の配置比較 (水平 vs 傾斜ステップ)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #161F30;
+      --text: #F8FAFC;
+      --subtext: #94A3B8;
+      --border: #24324D;
+      --indigo: #4F46E5;
+      --cyan: #38BDF8;
+      --gold: #F59E0B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 24px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #A5B4FC 0%, #38BDF8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      text-align: center;
+      color: var(--subtext);
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #4F46E5;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .badge-base { background: #3730A3; color: #C7D2FE; }
+    .badge-opt1 { background: #0E7490; color: #A5F3FC; }
+    .badge-opt2 { background: #B45309; color: #FEF3C7; }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .icon-preview-large {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.4));
+    }
+    .icon-preview-large img {
+      width: 100%;
+      height: 100%;
+      border-radius: 52px;
+    }
+    .sizes-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 16px 24px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      width: 80%;
+      justify-content: center;
+    }
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .size-label {
+      font-size: 11px;
+      color: var(--subtext);
+    }
+    .desc {
+      font-size: 13px;
+      color: var(--subtext);
+      text-align: left;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>丸の配置比較：水平並び vs 傾斜ステップ</h1>
+    <p class="subtitle">左丸（青）を下げ、右丸（黄）を上げた配置による視覚的効果・バランスの検証</p>
+
+    <div class="grid">
+      <!-- Baseline: Horizontal -->
+      <div class="card">
+        <span class="badge badge-base">基準 / 現行</span>
+        <div class="card-title">水平並び (Horizontal)</div>
+        <div class="icon-preview-large">
+          <img src="v12_horizontal_512.png" alt="水平並び">
+        </div>
+        <div class="sizes-row">
+          <div class="size-item">
+            <img src="v12_horizontal_128.png" width="48" height="48" style="border-radius:10px;">
+            <span class="size-label">48px</span>
+          </div>
+          <div class="size-item">
+            <img src="v12_horizontal_32.png" width="32" height="32" style="border-radius:7px;">
+            <span class="size-label">32px</span>
+          </div>
+        </div>
+        <div class="desc">
+          <strong>特徴:</strong><br>
+          ・「左右の比較・対比（Diff）」という構造的メタファーが最も直感的<br>
+          ・水平のドットが土台となり、上部の動的アークに対して重心が極めて安定
+        </div>
+      </div>
+
+      <!-- Option A: Slight Step -->
+      <div class="card">
+        <span class="badge badge-opt1">案A (±24px)</span>
+        <div class="card-title">ゆるやかな傾斜ステップ</div>
+        <div class="icon-preview-large">
+          <img src="v12_slight_step_512.png" alt="ゆるやかな傾斜">
+        </div>
+        <div class="sizes-row">
+          <div class="size-item">
+            <img src="v12_slight_step_128.png" width="48" height="48" style="border-radius:10px;">
+            <span class="size-label">48px</span>
+          </div>
+          <div class="size-item">
+            <img src="v12_slight_step_32.png" width="32" height="32" style="border-radius:7px;">
+            <span class="size-label">32px</span>
+          </div>
+        </div>
+        <div class="desc">
+          <strong>特徴:</strong><br>
+          ・左下から右上への矢印のベクトルと丸の並びがシンクロ<br>
+          ・「一段ステップアップした」「処理が進んだ」という進行感が出る<br>
+          ・アークとの隙間バランスも自然に維持
+        </div>
+      </div>
+
+      <!-- Option B: Dynamic Step -->
+      <div class="card">
+        <span class="badge badge-opt2">案B (±44px)</span>
+        <div class="card-title">ダイナミックな傾斜ステップ</div>
+        <div class="icon-preview-large">
+          <img src="v12_dynamic_step_512.png" alt="ダイナミックな傾斜">
+        </div>
+        <div class="sizes-row">
+          <div class="size-item">
+            <img src="v12_dynamic_step_128.png" width="48" height="48" style="border-radius:10px;">
+            <span class="size-label">48px</span>
+          </div>
+          <div class="size-item">
+            <img src="v12_dynamic_step_32.png" width="32" height="32" style="border-radius:7px;">
+            <span class="size-label">32px</span>
+          </div>
+        </div>
+        <div class="desc">
+          <strong>特徴:</strong><br>
+          ・右上がりの階段状になり、躍動感が最大化<br>
+          ・ただし右丸が上部アークに接近し、左丸が下端に寄るため余白が不均等に<br>
+          ・「比較（Diff）」よりも「右肩上がり成長グラフ」の印象が強くなる
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

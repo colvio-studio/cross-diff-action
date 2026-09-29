@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_v9_2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+
+    <!-- Swoosh Gradient -->
+    <linearGradient id="swoosh_grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4338CA"/>
+      <stop offset="35%" stop-color="#4F46E5"/>
+      <stop offset="70%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <linearGradient id="circle_blue_v9_2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="circle_gold_v9_2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <filter id="shadow_circles_v9_2" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312E81" flood-opacity="0.22"/>
+    </filter>
+    <filter id="gold_glow_v9_2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#F59E0B" flood-opacity="0.45"/>
+    </filter>
+    <filter id="swoosh_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0284C7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg_v9_2)"/>
+  <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#C7D2FE" stroke-width="4"/>
+
+  <!-- TWO PURE CIRCLES (cy = 325) -->
+  <g filter="url(#shadow_circles_v9_2)">
+    <circle cx="236" cy="325" r="62" fill="url(#circle_blue_v9_2)"/>
+    <circle cx="236" cy="325" r="60.5" fill="none" stroke="#818CF8" stroke-width="3"/>
+  </g>
+
+  <g filter="url(#gold_glow_v9_2)">
+    <circle cx="368" cy="325" r="62" fill="url(#circle_gold_v9_2)"/>
+    <circle cx="368" cy="325" r="60.5" fill="none" stroke="#FEF08A" stroke-width="3"/>
+  </g>
+
+  <!-- ARROW PATTERN 2: DYNAMIC TAPERED SWOOSH (Fluid body: thin tail -> bold shoulder -> sharp tip) -->
+  <g filter="url(#swoosh_shadow)">
+    <!-- Filled fluid swoosh polygon/path -->
+    <path d="M 68 418 C 76 340, 115 190, 240 115 C 300 80, 360 76, 385 76 L 380 50 L 448 94 L 384 136 L 388 112 C 340 112, 280 120, 220 155 C 130 215, 96 340, 88 418 Z" fill="url(#swoosh_grad)" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>
